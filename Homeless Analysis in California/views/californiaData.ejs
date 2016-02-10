@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+  select { width: 100px;height:32px }
+  </style>
+  
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+ <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
+      <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script src="/js/myjQuery.js"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    
+    <script type="text/javascript" src="https://www.google.com/jsapi">
+   </script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+    	  
+    	  <% if(city_data!=null){ if(city_data[0].categoryname!='veterans'){%>
+    	  var data = google.visualization.arrayToDataTable([['Category','Count'],
+    	                                                    <%  for ( var i=0; i < city_data.length ;i++){  %>
+    	                                                  	 ['<%= city_data[i].categorytype%>', <%=city_data[i].count%>],
+    	                                                    <% } %>
+    	                                                   ]);
+    	  
+    	  <%} else {%>
+    	  var data = google.visualization.arrayToDataTable([['Year','Count'],
+    	                                                    <%  for ( var i=0; i < city_data.length ;i++){  %>
+    	                                                  	 ['<%= city_data[i].year%>',<%=city_data[i].count%>],
+    	                                                    <% } %>
+    	                                                   ]);
+    	  <%}}%>
+
+        var options = {
+        		<% if(city_data!=null){%>
+          title: 'Homeless comparison for Year <%=city_data[0].year%> - <%= city_data[0].categoryname%>',
+          is3D: true,
+        
+          titleFontSize:26,
+          hAxis: { title: "Number - 1000" }
+          <%}%>
+        };
+
+        var pie_chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        var column_chart = new google.visualization.ColumnChart(document.getElementById('piechart_3d'));
+        var bar_chart = new google.visualization.BarChart(document.getElementById('piechart_3d'));
+        
+      /*   <%
+        if(city_data!=null){
+        if(city_data[0].categoryname == 'age' || city_data[0].categoryname == 'gender' || city_data[0].categoryname == 'crime'){%>
+        var pie_chart = new google.visualization.BarChart(document.getElementById('piechart_3d'));
+        <%}
+        else{
+        %>
+        var pie_chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        <%}}%>
+         */
+        
+        
+        
+        <% if(city_data!=null){ if(city_data[0].categoryname == 'Age' || city_data[0].categoryname == 'Gender' ){%>
+        
+        bar_chart.draw(data, options);
+        
+   <% }else if (city_data[0].categoryname == 'Veterans'|| city_data[0].categoryname == 'Crime'){%>
+   
+   column_chart.draw(data, options);
+   
+   <%} else{%>
+   
+   pie_chart.draw(data, options);
+   
+       <% }}%>
+      }
+    </script>
+  </head>
+  <body>
+
+  <div>
+						<%- include header.ejs %>
+				</div>
+<div align="center">
+				<% if(city_data!=null){%>
+				<h1> <%= city_data[0].cityname%> Homeless Data</h1>
+				<%}
+				else{%>
+				<h1> Homeless Data</h1>
+				<%}
+				%>
+			</div>	
+			<br> <br>
+		 	 <div align="center">
+     			<form id="year" action="/californiaDataCategoryWise" method="get">	
+					 <font size=4><b>Select Year</b>
+					 </font>  				 
+					 <select name="year">
+							  <% for (var i=0; i < all_years.length ;i++) 
+							  {
+							  	if(all_years[i].year!=2012){%>
+							  	<option value="<%=all_years[i].year%>" name="year"> <%=all_years[i].year%> </option>
+							<%}}%>
+					  </select>
+					  <br>
+					  <br>
+					  <div id="categoryTypeOptionDiv" class="optionDiv">
+					  <font size=4><b>Select Category:- </b></font>
+					  
+					  
+			<input type="radio" value="age" name="categoryType" <% if(city_data[0].categoryname == 'Age'){%> checked <%}%>	  id="Age" /> <label style="vertical-align:top" for="Age"> Age</label>
+				
+			<input type="radio" value="gender" name="categoryType" <% if(city_data[0].categoryname == 'Gender'){%> checked <%}%> id="Gender"/> <label style="vertical-align:top" for="Gender"> Gender</label>
+			<input type="radio" value="ethinicity" name="categoryType" <% if(city_data[0].categoryname == 'Ethinicity'){%> checked <%}%> id="Ethinicity"/> <label style="vertical-align:top" for="Ethnicity"> Ethinicity</label>
+			<input type="radio" value="housing" name="categoryType" <% if(city_data[0].categoryname == 'Housing'){%> checked <%}%> id="Housing"/> <label style="vertical-align:top" for="Housing"> Housing</label>
+			<input type="radio" value="disability conditions" name="categoryType"  <% if(city_data[0].categoryname == 'Disability Conditions'){%> checked <%}%>  id="disability"/> <label style="vertical-align:top" for="disability"> Disability Conditions </label>
+			<input type="radio" value="reason" name="categoryType" <% if(city_data[0].categoryname == 'Reason'){%> checked <%}%> id="Reason"/> <label style="vertical-align:top" for="Reason"> Reason </label>
+			<input type="radio" value="crime" name="categoryType" <% if(city_data[0].categoryname == 'Crime'){%> checked <%}%> id="crime"/> <label style="vertical-align:top" for="Crime"> Crime </label>
+			<input type="radio" value="veterans" name="categoryType" <% if(city_data[0].categoryname == 'Veterans'){%> checked <%}%> id="veterans"/> <label style="vertical-align:top" for="Veterans"> Veterans </label>
+			
+		</div>
+		 <br>
+					  <br>
+					<input type="submit" value="Submit" class="btn btn-success">
+					 
+					<input type="hidden" value="<%=cal_data[0].cityname%>" name="city">
+					
+					
+				</form>
+				</div>
+			
+			
+		   <%if(city_data!=null){%>
+		   <div align="center">
+   		   		<div id="piechart_3d" style="width: 900px; height: 400px;" align="right">  
+   		   		</div>
+   		   </div>	   
+   <%}%>
+			
+			
+	
+  </body>
+</html>

@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<style>
+select { width: 100px;height:32px }
+</style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Homeless Data Analysis</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+    .pstyle{
+
+        font-style: italic;
+
+    }
+
+
+    /* PAYPAL paypal.htm PAYMENT PAGE CODE */
+
+        .payform    {
+                font: 13px arial, verdana, sans-serif;
+                background-image: url("picts/shadeform.gif"); 
+                background-color: #F0F6F9;
+                text-align: left;
+                width: 125px;
+                overflow: auto;
+                border: #99A8AF 1px solid;
+                }
+
+        .payformbox {
+                background-color: transparent;
+                border: #CFD7DF 1px solid;
+                }
+
+        .payformmargin  { margin: 0px; }
+
+        .payformbutton  { width: 125px; }
+
+        .donate{
+                 background-color: #FFC226;
+                 color: black; 
+
+        }
+
+        .donate1{
+                 color: black; 
+
+        }
+        
+        .corusaltext{
+        	
+        	font-style: italic;
+ 			color: white; 
+        } 
+     
+
+
+    </style>
+
+</head>
+
+<body id="home" class="index">
+
+    <!-- Navigation -->
+  
+     <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            
+            
+        
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">            
+                <ul class="nav navbar-nav navbar-inverse navbar-right">
+                   <!--  <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li> -->
+                    
+                     <li>
+                        <a class="page-scroll" href="#home"><span class="glyphicon glyphicon-home"></span> HomelessAnalysis</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#Statistics"><span class="glyphicon glyphicon-stats"></span> Statistics</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio"> <span class="glyphicon glyphicon-gift"></span> Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#Ending"><span class="glyphicon glyphicon-globe"></span> Ending Homelessness</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/homelessFacts"> <span class="glyphicon glyphicon-zoom-out"></span> Facts</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#Volunteer"><span class="glyphicon glyphicon-link"></span> Volunteer</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#donate"><span class="glyphicon glyphicon-usd"></span> Donate</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about"> <span class="glyphicon glyphicon-user"></span> About Us</a>
+                    </li>
+                    
+                </ul>
+
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+
+     <!-- Navigation -->
+
+
+        <div class="container">
+                <div class="jumbotron">
+                    <div class="container">
+                        <a class="navbar-brand page-scroll" href="#page-top"></a> 
+                    </div>                
+           <div class="carousel slide" data-ride="carousel" id="carousel-ex">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-ex" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-ex" data-slide-to="1"></li>
+                    <li data-target="#carousel-ex" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="img/image1.png" alt="image">
+                        <div class="carousel-caption">
+	                        <p class="corusaltext">Sleep, to the homeless thou art home; the friendless find in thee a friend. 
+	                        </p>
+                         <span>Ebenezer Elliott</span>
+                           <!-- <h2>Are you listening? </h2> -->
+                       </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/image2.png" alt="image">
+                        <div class="carousel-caption">
+                         <p class="corusaltext">People who are homeless are not social inadequates.They are people without homes.
+	                     </p>
+	                      <span>Sheila McKechnie</span>
+                    </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/image3.png" alt="image">
+                        <div class="carousel-caption">
+                         <p class="corusaltext">And homeless near a thousand homes I stood,
+                         And near a thousand tables pined and wanted food.</p>
+                         <span>William Wordsworth</span>
+                        </div>
+                    </div>
+                    <a href="#carousel-ex" class="left carousel-control" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a href="#carousel-ex" class="right carousel-control" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div> 
+ 
+         
+    <!-- Stastics Section -->
+    <section id="Statistics">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Statistics</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                 <a href="/national" class="portfolio-link" data-toggle="modal">  <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span></a>
+                    <h4 class="service-heading">National Estimates</h4>
+                    <p class="text-muted">Statistics from the department of housing and urban development in the United States from 2005-2013</p>
+                </div>
+                
+                <div class="col-md-4">
+                 <a href="#nationalStatistics" class="portfolio-link" data-toggle="modal">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-pencil fa-stack-1x fa-inverse"></i> 
+                      <!--  <i class="fa fa-lock fa-stack-1x fa-inverse"></i> -->
+                    </span></a>
+                    <h4 class="service-heading">State Estimates</h4>
+                    <p class="text-muted">State Statistics from  in the United States from 2010-2013</p>
+                </div>
+                <div class="col-md-4">
+                 <a href="#californiaHomeless" class="portfolio-link" data-toggle="modal">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-child fa-stack-1x fa-inverse"></i> 
+                    </span></a>
+                    <h4 class="service-heading">Homelessness in California</h4>
+                    <p class="text-muted">Homeless People Cant Sit On Sidewalks In More Than Half Of U.S. Cities - The Huffington Post</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Services Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Services</h2>
+                    <h3 class="section-subheading text-muted">"They are safe but they are not in their homes. 
+                    They are city-less. I think it's just a disaster for everyone."
+						-Teri Hatcher</h3> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#housing" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/solution/housing.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Housing and Shelters</h4>
+                        <p class="text-muted">"Housing programs provide the dignity and stability of a permanent home."</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#food" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/solution/food.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Food</h4>
+                        <p class="text-muted">"Grand Central Food Program provides 1,000 warm, nutritious meals each night to homeless and hungry people."</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#crisisServices" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/solution/crisis.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Crisis Service</h4>
+                        <p class="text-muted">"Provide immediate, lifesaving help to homeless and at-risk men, women and children."</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#youthPrograms" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/solution/youth.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Youth Programs</h4>
+                        <p class="text-muted">"Help homeless kids overcome the tremendous obstacles they have endured so they can build brighter futures."</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#employment" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/solution/job.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Employment</h4>
+                        <p class="text-muted">"First Step Job Training Program gives homeless and low-income women the tools they need to find living-wage jobs."</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#advocacy" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/solution/education.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Advocacy</h4>
+                        <p class="text-muted">"Advocacy advances sensible long-term solutions to the crisis of homelessness and defends the rights of homeless"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+ 
+
+
+   <!-- Ending homeless Section -->
+    <section id="Ending" class="bg-light-gray">
+        <div class="container"> 
+        	 <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Ending Homelessness</h2>
+                    
+                </div>
+            </div>
+                  <div class="row">             
+                    <div class="col-md-4 text-center">
+                      <img class="img-circle" src="img/wells.jpg">
+                      <h4>Financial Assistance</h4>
+                       <p class="pstyle">"Security deposists and cash asistance programs"</p>                     
+                       <p><a class="btn btn-default" href="#financial" class="portfolio-link" data-toggle="modal">View details </a></p>
+                    </div>
+                    
+                    <div class="col-md-4 text-center">
+                      <img class="img-circle" src="img/thriftstore.jpg">
+                      <h4>Thrift Stores</h4>
+                       <p class="pstyle">"Take a look at some of the treasures from stores recently."</p>  
+                      <p><a class="btn btn-default"  href="#hotline" class="portfolio-link" data-toggle="modal">View details </a></p>
+                    </div>
+                    
+                    <div class="col-md-4 text-center">
+                      <img class="img-circle" src="img/seniors.jpg">
+                      <h4>Senior Citizens</h4>
+                      <p class="pstyle">"Emergency Senior Shelter, the Senior Companion Program, Foster Grandparent"</p> 
+                      <p><a class="btn btn-default" href="#seniorCitizens" class="portfolio-link" data-toggle="modal">View details </a></p>
+                    </div>
+                    
+                    <div class="col-md-4 text-center">
+                      <img class="img-circle" src="img/health1.jpg">
+                      <h4>Medical Services</h4> 
+                       <p class="pstyle">"Pediatric and adult primary care, screening, health education, convalescent care"</p>  
+                      <p><a class="btn btn-default" href="#medicalServices" class="portfolio-link" data-toggle="modal">View details </a></p>
+                    </div>
+                    
+                    <div class="col-md-4 text-center">
+                      <img class="img-circle" src="img/vertans.jpg">
+                      <h4>Veterans</h4>
+                      <p class="pstyle">"Help with rent, utilities, or other basic needs through the Soldiers, Sailors, and Marines Families</p> 
+                      <p><a class="btn btn-default" href="#veterans" class="portfolio-link" data-toggle="modal">View details </a></p>
+                    </div>
+                    
+                    <div class="col-md-4 text-center">
+                      <img class="img-circle" src="img/fesco.gif">
+                      <h4>Disability and SSI</h4>
+                      <p class="pstyle">"Federal programs that help people who cannot work because of a disability"</p>
+                      <p><a class="btn btn-default" href="#disability" class="portfolio-link" data-toggle="modal">View details </a></p>
+                    </div>
+                  </div><!-- /.row -->              
+        </div>
+    </section>
+
+
+    
+    
+      <!-- Volunteer section -->
+     <section id="Volunteer" class="bg-light-gray">     
+    	 <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Volunteer</h2>
+                    
+                </div>
+            </div>
+    	 <div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title">Volunteer Form</h3>	
+				</div>
+				
+				<form action="/register" method="post">
+			    <div class="panel-body">
+			    		<div class="control-group">
+							  <label class="control-label" for="textinput">First Name</label>
+							  <div class="controls">
+							   <!-- <input id="textinput" name="textinput" type="text" placeholder="" class="input-medium" required=""> -->
+							    <input class="form-control" type="text" id="xs" name="firstname" required> 
+							   <!--  <p class="help-block">help</p> -->
+							  </div>
+							</div>
+							
+							<div class="control-group">
+							  <label class="control-label" for="textinput">Last Name</label>
+							  <div class="controls">
+							   <!--  <input id="textinput" name="textinput" type="text" placeholder="" class="input-medium" required=""> -->
+							     <input class="form-control" type="text" id="xs" name="lastname" required>
+							   <!--  <p class="help-block">help</p> -->
+							  </div>
+							</div>
+
+
+								<form role="form">
+								  <div class="form-group">
+								    <label for="exampleInputEmail1">Email address</label>
+								    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" name="email" required>
+								  </div>
+
+			    		<!--  <form class="form-horizontal" role="form">
+						       	 <div class="form-group form-group-sm">
+						          <label class="col-sm-2 control-label" for="sm" text-align="left">First Name</label>
+						          <div class="col-sm-2">
+						            <input class="form-control" type="text" id="sm">
+						          </div>
+						        </div>
+						        <div class="form-group form-group-sm">
+						          <label class="col-sm-2 control-label" for="sm">Last Name</label>
+						          <div class="col-sm-2">
+						            <input class="form-control" type="text" id="sm">
+						          </div>
+						        </div>
+						      </form> -->
+			    		
+						        <div class="form-group">
+						          <label for="sel1">Select the service:</label>
+						          <select class="form-control" id="sel1" name="service">
+						           <option>Select Service</option>
+						           <%if(all_services!=null){ for (var i=0; i < all_services.length ;i++) {%>
+								  <option value="all_services[i].servicedesc%>" name="cityName"> <%=all_services[i].servicedesc%> </option>
+								<%}}%>
+						          </select>
+						         </div> 
+						  
+						 
+						        <div class="form-group">
+						          <label for="sel1">Select the city:</label>
+						          <select class="form-control" id="sel1" name="city1">
+						          <option>Select County</option>
+						            <% for (var i=0; i < city.length ;i++) {%>
+								  <option value="<%city[i].cityname%>" name="cityName"> <%=city[i].cityname%> </option>
+								<%}%>
+						          </select>
+						         </div> 
+						 <input type="submit" class="btn btn-info" name="Submit">
+						  
+				</div>
+				</form>					          
+			 	<div>
+			  	 <div class="panel-footer">"Some deeds done are better than great deeds planned". 
+			  	 BECOME A VOLUNTEER!</div>
+			   </div>
+      </div>
+     </section>  
+     
+     
+     
+
+
+      <!-- Donate Section -->
+    <section id="donate" class="bg-light-gray">
+
+      <!-- <div id="primary" class="content-area" style="background-image: url(https://www.coalitionforthehomeless.org/wp-content/uploads/2014/05/donate_bg1.jpg)"> -->
+
+         <div id="primary" class="content-area" style="background-image: url(http://i.huffpost.com/gen/2083170/thumbs/o-HOMELESS-BLACK-CHILD-facebook.jpg)">  
+
+        <!--<div id="primary" class="content-area" style="background-image: url(http://i.huffpost.com/gen/1931212/thumbs/o-HOMELESS-CHILDREN-facebook.jpg)">   -->
+            <main id="main" class="site-main" role="main"> 
+                    <div class="grid-row row-3 clearfix">
+                        <div class="grid-unit col-2 clearfix">
+                            <h1 class ="donate">Donate Now</h1>
+                            <h3 class="donate1">Give some help for those who need it.</h3>
+                           <!-- <div class="mobile_donate_links" data-mobile=true>
+                                <ul id="menu-donate-links-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2309"><a href="/take-action/corporate-participation/">Corporate Participation</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4140"><a href="https://www.coalitionforthehomeless.org/donate/bequests-and-planned-giving/">Bequests and Planned Giving</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4141"><a href="https://www.coalitionforthehomeless.org/donate/stocks-and-security/">Donate Stocks and Security</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4143"><a href="https://www.coalitionforthehomeless.org/donate/workplace-giving/">Workplace Giving</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4142"><a href="https://www.coalitionforthehomeless.org/donate/in-kind-giving/">In-Kind Giving</a></li>
+                                    </ul>                                
+                                    <a href="javascript:void(0)" class="more">Giving Options</a>
+                            </div> -->
+                            <div class="mobile-flex">
+                              <!--  <script src="https://api.causeview.com/form/v2.1/scripts/jquery-1.5.1.min.js" type="text/javascript"></script><script src="https://api.causeview.com/form/v2.1/scripts/crossdomain.js" type="text/javascript"></script><script>$(function() { var src = 'https://api.causeview.com/form/v2.1/cupertino/wizard/a0JC000000bh9xmMAA?fid=a0Ji0000005RDeZ&__surl=tICqs679cCrYT635Z5GsNIltxMXFmscJSaXFa7a2g4wH4Nc_qEkaiKln0NAXT1-q1jQ6K4FPXa_XI46Www3RVg2&cid=701i00000015Th6'; $("#actionpages_iframe").loadCauseViewForm({src:src, api:'https://api.causeview.com', frame_height:'350px', applyQueryStrings:true}); });</script> -->
+                                <div id="actionpages_iframe" class="actionpages-Container">
+                                </div>
+                                <br/>
+                                <div class="paypal">
+                                    <p class="donate1">You can easily make your donation on PayPal:</p>
+                                    <!--
+                                <form name="_xclick" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                    <input type="hidden" name="cmd" value="_xclick">
+                                    <input type="hidden" name="business" value="donations@your-web-domain.com">
+                                    <input type="hidden" name="item_name" value="Donation for website">
+                                    <input type="hidden" name="currency_code" value="USD">
+                                    <input type="hidden" name="amount" value="25.00">
+                                    <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="Make a donation with PayPal">
+                                </form> -->
+
+                                <span class="title">
+                                          <!--  Pay Through Paypal<br>
+                                            </span>
+
+                                            This form is for clients to send you payments of an unspecified amount. Perhaps for a custom project. Please enter an amount into the form below to make a payment.<br> -->
+
+                                            <br>
+
+                                            <!-- END PARAGRAPH 1 -->
+
+                                            <!-- START PAYPAL FORM -->
+
+                                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="payformmargin">
+                                            <input type="hidden" name="cmd" value="_xclick">
+                                            <input type="hidden" name="business" value="neeraj.kumbhar@gmail.com">
+                                            <input type="hidden" name="item_name" value="Paypal Payment">
+                                            <input type="hidden" name="no_note" value="1">
+                                            <input type="hidden" name="currency_code" value="USD">
+
+
+                                            <table cellpadding="8" cellspacing="0" border="0"><tr><td valign="top" align="center" class="payformbox">
+
+                                            <table cellpadding="3" cellspacing="0" border="0"><tr><td align="left">
+
+                                            Enter amount:<br>
+                                            <input type="text" name="amount" value="" class="payform"><br>
+
+                                            </td><td rowspan="3">
+
+                                            <img src="img/paypal-custom.gif" alt="Payments through Paypal"><br>
+
+                                            </td></tr><tr><td align="left">
+
+                                            <input type="hidden" name="on0" value="Project Details">
+
+                                            Payment notes:<br>
+                                            <textarea name="os0" rows="3" cols="17" class="payform"></textarea><br>
+
+                                            </td></tr><tr><td align="left">
+
+                                           <!-- <input type="submit" name="PaypalPayment" value="Send Payment" class="payformbutton"><br>  -->
+                                            <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="Make a donation with PayPal"> 
+                                            </td></tr></table>
+                                            </td></tr></table>
+
+                                            </form>
+
+                                            <!-- END PAYPAL FORM -->
+
+                               
+                                  <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-row row-3 clearfix disclaimer">
+                        <div class="grid-unit col-2">
+                            <p class="donate1">Coalition for the Homeless, 129 Fulton Street, California, CA  10038.</p>
+                            <p class="donate1">Coalition for the Homeless, Inc. is a 501(c)(3) not-for-profit organization registered with the Internal Revenue Service/Department of the Treasury. Therefore, all donations are tax-deductible to the fullest extent permitted by applicable law. All donors receive an acknowledgment that includes a confirmation of their donation for their tax records.</p>
+                            <p class="donate1"><strong>Please Note:</strong> The Coalition for the Homeless never solicits financial support on the street or in the subway. Please do not give money to individuals soliciting in such public places who claim to be collecting funds on our behalf.</p>
+                        </div>
+                      <!--  <div class="grid-unit col-1 badges">
+                            <img src="https://www.coalitionforthehomeless.org/wp-content/themes/cfh/img/charity_badges.jpg" alt=""/>
+                        </div> -->
+                    </div>
+                    
+        </main><!-- #main -->
+    </div><!-- #primary -->
+
+        </div>
+    </section>     
+
+<!-- About section-->
+	<section id="about" class="bg-light-gray" align="center">     
+    	 <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About Us</h2>
+                </div>
+         </div>
+       <div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title">Cmpe 272 - Team 22</h3>	
+				</div>
+		</div>
+		 <div>
+                	<div class="control-group">
+                		<label class="control-label" for="textinput">Mukul Abulgekar - <a href="mailto:mukul.ambulgekar@sjsu.edu"><u>mukul.ambulgekar@sjsu.edu</u></a></label><br>
+                		<label class="control-label" for="textinput">Neeraj Kumbhar - <a href="mailto:neeraj.kumbhar@sjsu.edu"><u>neeraj.kumbhar@sjsu.edu</u></a></label><br>
+						<label class="control-label" for="textinput">Neha Wani - <a href="mailto:neha.wani@sjsu.edu"><u>neha.wani@sjsu.edu</u></a></label>
+					</div>
+         </div>
+    	
+	</section>
+	
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Homeless Analysis & Services | CmpE272 | Team22</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <!-- <li><a href="#">&copy;SJSU-Fall 2014</a> -->
+                        <li>Fall 2014</a>
+                        </li>
+                     <!--    <li><a href="#">Terms of Use</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="nationalStatistics" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">                      
+                            <h3>Estimates of Homelessness in the United States</h3> 
+                            <p>On a single night in January 2013, there were 610,042 people experiencing
+							homelessness in the United States, including 394,698 people who were homeless in
+							sheltered locations and 215,344 people who were living in unsheltered locations.</p>                        
+                      
+                           <img src="img/2.jpg" alt="image1" style="width:750px;height:350px">
+                           <form id="year" action="/stateData" method="post" size="100px">
+  						<h3 id="header"><h3 id="header">Select Year </h3>	 </h3>	
+  							  <select name="year">
+								  <% if(all_years!=null){ for (var i=0; i < all_years.length ;i++) {%>
+								  <option value="<%=all_years[i].year%>" name="year"> <%=all_years[i].year%> </option>
+								<%}}%>
+							  </select>
+						      <input type="submit" value="Submit" class="btn btn-success">
+							</form>
+						<br>
+						
+
+                           <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Go Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <div class="portfolio-modal modal fade" id="californiaHomeless" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">                      
+                            <h3>Estimates of Homelessness in the California</h3> 
+                            <p>Homless counts based on gender, age, ethinicity, reasons for homelesslness,
+                            crime etc, as per counties for the year 2011, 2013.</p>                        
+                      
+                           <img src="img/5.png" alt="image1" style="width:750px;height:350px">
+                           <form id="cityName" action="/californiaData" method="post" size="100px">
+  							  <h3 id="header">Select City </h3>	
+  							  <select name="cityName">
+							  <% for (var i=0; i < city.length ;i++) {%>
+												  <option value="<%=city[i].cityname%>" name="cityName"> <%=city[i].cityname%> </option>
+												<%}%>
+							  </select>
+						      <input type="submit" value="Submit" class="btn btn-success">
+							</form>
+						<br>
+					
+
+                           <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Go Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="portfolio-modal modal fade" id="housing" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">                   
+                            <h3> Housing and Shelter for California Counties</h3>
+                            <p> Programs provide temporary shelter for women and women with children.
+                            Free transitional program for clean, sober, single working women with
+							children and men. 
+                            
+                          </p>                 
+                          	<img src="img/services/housingandshelter.png" alt="image1" style="width:750px;height:350px">
+                           <br>	
+                           <form id="cityName" action="/countyServices" method="post">
+									  <h3 id="header">Select County </h3>	
+									  <select name="cityName">								 
+												  <% for (var i=0; i < city.length ;i++) {%>
+												  <option value="<%=city[i].cityname%>" name="cityName"> <%=city[i].cityname%> </option>
+												<%}%>
+									</select>
+									<input type="submit" value="Submit" class="btn btn-success">
+									<input type="hidden" name="serviceId" value="1">
+							</form>
+							<br>
+
+                           <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Go Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="portfolio-modal modal fade" id="food" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">  
+                            <h3>Food Services for California Counties</h3>
+                            <p>Service sites that provide food and other household supplies to low-income and homeless people.
+                            Food Distribution Programs provide food and other household supplies 
+                            to food banks and meal programs that serve low-income and homeless people.
+                                                      
+                            </p>
+                                             
+                          	<img src="img/services/foodservices.jpg" alt="image1" style="width:650px;height:350px">
+	                        <br>	
+	                        
+                           <form id="cityName" action="/countyServices" method="post">
+								  <h3 id="header">Select County </h3>	
+								  <select name="cityName">							 
+										  <% for (var i=0; i < city.length ;i++) {%>
+										  <option value="<%=city[i].cityname%>" name="cityName"> <%=city[i].cityname%> </option>
+										<%}%>
+								</select>
+							<input type="submit" value="Submit" class="btn btn-success">
+							<input type="hidden" name="serviceId" value="2">
+						</form>
+						<br>
+						<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Go Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="portfolio-modal modal fade" id="crisisServices" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            
+                           <h3>Immediate lifesaving help in California Counties</h3>
+                            <p>Programs that are designed to quickly address these needs including, medical care, 
+                            hot showers, clean clothes, nourishing meals and a safe bed. First we heal the body, 
+                            and then we heal the person.
+                            </p>
+                            
+                            <img src="img/services/CrisisServices.jpg" alt="image1" style="width:650px;height:350px">
+                            
+                          
+                           <br>	
+                           <form id="cityName" action="/countyServices" method="post">
+								  <h3 id="header">Select County </h3>	
+								  <select name="cityName">							 
+										  <% for (var i=0; i < city.length ;i++) {%>
+										  <option value="<%=city[i].cityname%>" name="cityName"> <%=city[i].cityname%> </option>
+										  <%}%>
+								  </select>
+								<input type="submit" value="Submit" class="btn btn-success">
+								<input type="hidden" name="serviceId" value="3">
+						</form>
+						<br>
+
+                           <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Go Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <div class="portfolio-modal modal fade" id="youthPrograms" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                     
+                            <h3>Youth Drop in Centers</h3>
+                            <p>Provides intake and referrals, phone screening for families and children
+									up to the age of 17 years. Offers information about other community
+									resources and information about access services to public mental health.
+                            
+                         <!--   Programs like the Runaway and Homeless Youth Program (RHY), 
+                            FYSB supports street outreach, emergency shelters and longer-term transitional 
+                            living and maternity group home programs to serve and protect these young people. -->
+                            
+                            </p>
+                            
+                            <img src="img/services/youthservices.png" alt="image1" style="width:650px;height:350px">
+                          
+                           <br>	
+                           <form id="cityName" action="/countyServices" method="post">
+									  <h3 id="header">Select County </h3>	
+									 <select name="cityName">									 
+											  <% for (var i=0; i < city.length ;i++) {%>
+											  <option value="<%=city[i].cityname%>" name="cityName"> <%=city[i].cityname%> </option>
+											<%}%>
+									</select>
+									<input type="submit" value="Submit" class="btn btn-success">
+									<input type="hidden" name="serviceId" value="4">
+							</form>
+							<br>
+
+                           <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Go Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="portfolio-modal modal fade" id="employment" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            
+                           <h3>Employment Program Models</h3>
+                            <p>Programs offer both mainstream and targeted employment-focused 
+                            programs that help lead to self-sufficiency.
+                            Provides a no-fee, community job resource center with special emphasis on
+						    individuals coming from other assistance and referral programs.
+                            </p>
+                            
+                            <img src="img/services/jobservices.jpg" alt="image1" style="width:650px;height:350px">
+                            
+                          
+                           <br>	
+                           <form id="cityName" action="/countyServices" method="post">
+										  <h3 id="header">Select County </h3>	
+										  	<select name="cityName">									 
+													  <% for (var i=0; i < city.length ;i++) {%>
+													  <option value="<%=city[i].cityname%>" name="cityName"> <%=city[i].cityname%> </option>
+													<%}%>
+
+											</select>
+										<input type="submit" value="Submit" class="btn btn-success">
+										<input type="hidden" name="serviceId" value="5">
+						</form>
+						<br>
+                           <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Go Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     <div class="portfolio-modal modal fade" id="advocacy" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                     
+                    
+                            <h3>Education centers and Recovery programs.</h3>
+                            Provides assessment, detoxification, outpatient, residential, transitional
+							housing, ancillary and prevention services to adults (at least 18 years) at
+							sites located throughout. 
+                            
+                            </p>
+                            
+                            <img src="img/services/advocacyservices.jpg" alt="image1" style="width:650px;height:350px">
+                            
+                          
+                           <br>	
+                           <form id="cityName" action="/countyServices" method="post">
+								  <h3 id="header">Select County </h3>	
+								  <select name="cityName">								 
+								  <% for (var i=0; i < city.length ;i++) {%>
+								  <option value="<%=city[i].cityname%>" name="cityName"> <%=city[i].cityname%> </option>
+								<%}%>								
+								</select>
+								
+								<input type="submit" value="Submit" class="btn btn-success">
+								<input type="hidden" name="serviceId" value="6">
+								</form>
+								<br>
+                           <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Go Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+ <div class="portfolio-modal modal fade" id="financial" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            
+                            
+                           <h3>Financial aid for California Counties.</h3>
+                            Provides financial assistance to states to support services for homeless 
+                            individuals who have serious mental illness or serious mental illness and substance abuse.                     
+                            </p>
+                            
+                            <img src="img/services/financialservices.jpg" alt="image1" style="width:650px;height:350px">
+                            
+                          
+                           <br>	
+                           <form id="cityName" action="/countyServices" method="post">
+									  <h3 id="header">Select County </h3>	
+									  <select name="cityName">
+									 
+												  <% for (var i=0; i < city.length ;i++) {%>
+												  <option value="<%=city[i].cityname%>" name="cityName"> <%=city[i].cityname%> </option>
+												<%}%>
+												
+									</select>
+									<input type="submit" value="Submit" class="btn btn-success">								
+									<input type="hidden" name="serviceId" value="8">
+									</form>
+<br>
+
+                           <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Go Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     <div class="portfolio-modal modal fade" id="medicalServices" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            
+                            <h3>Medical Services for California Counties</h3>
+                            <p> Programs provide assistance to adults over 65 years who are functionally impaired.
+                            Provides legal assistance, counseling, representation, information, referrals
+							and mediation to persons identified as mentally or developmentally disabled.
+                            
+                          </p>                 
+                          	<img src="img/services/medicalservices.JPG" alt="image1" style="width:650px;height:300px">
+                          
+                           <br>	
+                           <form id="cityName" action="/countyServices" method="post">
+										  <h3 id="header">Select County </h3>	
+										  <select name="cityName">									 
+											  <% for (var i=0; i < city.length ;i++) {%>
+											  <option value="<%=city[i].cityname%>" name="cityName"> <%=city[i].cityname%> </option>
+											<%}%>
+										</select>
+							<input type="submit" value="Submit" class="btn btn-success">
+							<input type="hidden" name="serviceId" value="7">
+							</form>
+							<br>
+							
+                           <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Go Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     <div class="portfolio-modal modal fade" id="hotline" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            
+                            <h3> Thrift stores in California Counties</h3>
+                            <p> Provides a list of all the thrift stores in California counties.
+                            </p>                 
+                          	<img src="img/services/thrifty.jpg" alt="image1" style="width:650px;height:300px">
+                            
+                          
+                           <br>	
+                           <form id="cityName" action="/countyServices" method="post">
+										  <h3 id="header">Select County </h3>	
+										  <select name="cityName">										 
+										  <% for (var i=0; i < city.length ;i++) {%>
+										  <option value="<%=city[i].cityname%>" name="cityName"> <%=city[i].cityname%> </option>
+										<%}%>
+										</select>
+							<input type="submit" value="Submit" class="btn btn-success">
+							<input type="hidden" name="serviceId" value="9">
+							</form>
+<br>
+
+                           <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Go Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     <div class="portfolio-modal modal fade" id="veterans" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            
+                           <h3>Veteran services for California Counties</h3>
+                            <p> Provides veterans and their dependents with assistance in filling claims for
+								disability compensation, pension, burial benefits and requests for copies of
+								discharges from National Personnel Records.
+                            
+                          </p>                 
+                          	<img src="img/services/veteransservices.jpg" alt="image1" style="width:650px;height:300px">
+                            
+                          
+                           <br>	
+                           <form id="cityName" action="/countyServices" method="post">
+								  <h3 id="header">Select County </h3>	
+							     <select name="cityName">								 
+								  <% for (var i=0; i < city.length ;i++) {%>
+								  <option value="<%=city[i].cityname%>" name="cityName"> <%=city[i].cityname%> </option>
+									<%}%>
+								</select>
+							<input type="submit" value="Submit" class="btn btn-success">
+							<input type="hidden" name="serviceId" value="10">
+							</form>
+							<br>
+
+                           <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Go Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     <div class="portfolio-modal modal fade" id="seniorCitizens" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            
+                            <h3> Senior citizen services for California Counties</h3>
+                            <p> Programs provide temporary shelter and provides meals, food and clothing banks, 
+                            computer and internet access, transportion for senior citizens.
+                            
+                          	</p>                 
+                          	<img src="img/services/seniorservices.jpg" alt="image1" style="width:750px;height:350px">
+                            
+                          
+                           <br>	
+                           <form id="cityName" action="/countyServices" method="post">
+								  <h3 id="header">Select County </h3>	
+								  <select name="cityName">								 
+								  <% for (var i=0; i < city.length ;i++) {%>
+								  <option value="<%=city[i].cityname%>" name="cityName"> <%=city[i].cityname%> </option>
+								<%}%>
+								</select>
+								<input type="submit" value="Submit" class="btn btn-success">
+								<input type="hidden" name="serviceId" value="11"> 
+							</form>
+							<br>
+
+                           <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Go Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+       <div class="portfolio-modal modal fade" id="disability" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            
+                           <h3>Disability services for California Counties</h3>
+                            <p>Provides disability benefits to certain members of your family if you 
+                            have worked long enough and have a medical condition that has prevented you from working or 
+                            is expected to prevent you from working for at least 12 months or end in death. 
+                            
+                          </p>                 
+                          	<img src="img/services/disabilityservices.jpg" alt="image1" style="width:650px;height:350px">
+                            
+                          
+                           <br>	
+                           <form id="cityName" action="/countyServices" method="post">
+							  <h3 id="header">Select County </h3>	
+							<select name="cityName">									
+									  <% for (var i=0; i < city.length ;i++) {%>
+									  <option value="<%=city[i].cityname%>" name="cityName"> <%=city[i].cityname%> </option>
+									<%}%>
+							</select>
+							<input type="submit" value="Submit" class="btn btn-success">
+							<input type="hidden" name="serviceId" value="12">
+							</form>
+<br>
+
+                           <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Go Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   <!--  <a href="#services" id="scroll-top" class="add-tooltip fixed" data-placement="top">
+                        <i class="fa fa-angle-double-up"></i> -->
+
+    
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+   <!--  <script src="js/jquery-1.6.1.min.js"></script> -->
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+    <script src="js/init.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+   <!--  <script src="js/contact_me.js"></script> -->
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+
+</body>
+
+</html>

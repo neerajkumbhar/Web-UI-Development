@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+ <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
+      <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  
+ 
+  <script type='text/javascript'>
+  google.load('visualization', '1', {'packages': ['geomap']});
+  google.setOnLoadCallback(drawMap);
+ 
+  function drawMap(){
+  var data = google.visualization.arrayToDataTable([['State','Count'],
+  <%  for ( var i=0; i < state.length ;i++){ %>
+	 ['<%= state[i].statename%>', <%=state[i].count%>],
+  <% } %>
+ ]);
+ /*  }
+ */
+ var options = {
+		 
+		  'width':1200,
+		  'height':550,
+		  backgroundColor: '#075A85'
+		  //colors: "Green"
+		}
+
+      options['dataMode'] = 'regions';
+      options['region'] = 'US';	
+    // options['colors'] = [0xFFFF99, 0xFF9966];
+    //options['colors'] = [0x95C2D9, 0x5E9FCF];
+    
+    options['colors'] = [0xE9F1FA, 0x075A85];
+      
+      
+      
+    var container = document.getElementById("map_canvas");
+    
+        var geomap = new google.visualization.GeoMap(container);
+
+        geomap.draw(data, options);
+    
+        }  
+  </script>
+  </head>
+  <body>
+ 
+  				<div>
+						<%- include header.ejs %>
+				</div>
+		
+  		<div align="center">						
+		<h1>National homeless estimates:-<%=state[0].year%> </h1>
+		
+	  				 <form id="year" action="/stateData" method="post">
+					  <h5>Select Year
+					  <select name="year">
+							  <% for (var i=0; i < all_years.length ;i++) { %>
+							   
+							  <option value="<%=all_years[i].year%>" name="year" <%if(all_years[i].year==state[0].year){%> selected <%}%> > <%=all_years[i].year%> </option>
+							 
+						
+						
+							<%}%>
+					  </select> </h5>
+					<input type="submit" value="Submit" class="btn btn-success">
+				</form>
+  			</div>
+  				<div id='map_canvas' align="center"></div>
+  
+ 
+ 
+  </body>
+</html>

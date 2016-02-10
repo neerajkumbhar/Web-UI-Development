@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>least.js is a Random &amp; Responsive jQuery, HTML 5 &amp; CSS3 Gallery with LazyLoad</title>
+
+        <meta name="description" content="least.js is a Random &amp; Responsive jQuery, HTML 5 &amp; CSS3 Gallery with LazyLoad">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <link rel="author" href="https://plus.google.com/113595842256533600994" />
+
+        <link href="css/style.min.css?22012014" rel="stylesheet" />
+        <link href="css/least.min.css" rel="stylesheet" />
+        <link href="css/prism.min.css" rel="stylesheet" />
+    </head>
+    <body>
+
+        <!-- CSS Ribbon by Simon Whitaker -->
+    
+        
+        <!-- Gallery -->
+        <section>
+            <ul id="gallery">
+            
+                <li id="fullPreview"></li>
+                
+                <!-- 1 -->
+                <li>
+                    <a href="img/full/1.jpg" ></a>
+                    <img data-original="img/thumb/1.jpg" src="img/effects/white.gif" width="240" height="150" alt="Photo" />
+                    
+                    <div class="overLayer"></div>
+                    <div class="infoLayer">
+                        <ul>
+                            <li>
+                                <h2>
+                                    Photo   
+                                </h2>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                
+                </li>
+                
+              
+                <br>
+<br>
+                <!-- 20 -->
+             
+                            
+            </ul>
+        </section>
+        <!-- / Gallery -->
+        
+      
+            <!--End mc_embed_signup-->
+            
+        
+
+            
+
+        </article>
+        
+        
+        
+      
+
+        
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.lazyload.min.js"></script>
+        
+        <script src="js/least.min.js?03072013"></script>
+        <script src="js/prism.js"></script>
+
+        <script>
+        $(document).ready(function(){
+            $('#gallery').least();
+
+
+            /* layer fade in */
+            $('.layer').delay('5000').fadeIn();
+
+            /* hide layer */
+            $('.close').on(
+                'click', 
+                function(event) {
+                    event.preventDefault();
+
+                    $('.layer').fadeOut();
+                }
+            );
+
+            $(document).keydown(function(event) {
+                if(event.keyCode === 27){ $('.layer').fadeOut(); }
+            });
+        });
+        </script>
+        
+       
+        <script type="text/javascript">
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+        
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-16040332-5', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

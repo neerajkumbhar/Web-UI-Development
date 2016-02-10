@@ -1,0 +1,61 @@
+<html>
+  <head>
+   <link rel='stylesheet' href='/stylesheets/style.css' />
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+ <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
+      <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  
+ 
+  <script type='text/javascript'>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Overall', 'Individuals','People in Families','Chronic Individuals'],
+          ['2005',  763010, 444027,318983,175914],
+          ['2006',  759101, 452580,306521,155623],
+          ['2007',  671888, 423377 ,248511 ,123833],
+          ['2008',  664414, 415202 ,249212 ,124135],
+          ['2009',  643067, 404957 ,238110 ,110917],
+          ['2010',  649917, 407966 ,241951, 109812],
+          ['2011',  636017, 399836,236181,107148],
+          ['2012',  633782, 394379 ,239403 ,99894],
+          ['2013',  610042, 387845 ,222197 ,92593]
+       
+        ]);
+
+        var options = {
+          title: 'Homeless Analysis from year (2005-2013)',
+          pointSize : 10,
+          vAxis: {title: 'Count',  titleTextStyle: {color: 'black',size:'10'}},
+        hAxis: {title: 'Year',  titleTextStyle: {color: 'black',size:'10'}},
+        
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+  <div>
+						<%- include header.ejs %>
+				</div>
+    <div id="chart_div" style="width: 1300px; height: 600px;"></div>
+  </body>
+</html>

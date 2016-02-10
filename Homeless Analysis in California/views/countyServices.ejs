@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+ <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
+      <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+   
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body >
+  <%- include header.ejs %>
+  <br><br> <br>
+  <div class="panel panel-primary ">
+		  <div class="panel-heading"><h3><%=service_data[0].servicedesc%> for <%=service_data[0].cityname%></h3>
+		  </div>
+		  
+		  <div class="panel-body ">
+			<table width="100%">
+
+				<% for(var i=0;i< service_data.length;i++) {%>
+				
+				<tr>
+			
+					<td width="50%">
+						<address>
+						<font size="4">	<strong><%=service_data[i].name%></strong> <br></font>
+							<%=service_data[i].address%><br> <abbr title="Phone">Phone:</abbr>
+							<%=service_data[i].phone%> <br> <a
+								href="<%=service_data[i].url%>"><strong> <u>
+										<%=service_data[i].url%></u></strong><br></a>
+							<hr>
+						</address>
+					</td width="50%"> 
+					
+					<% if(i <service_data.length-1 ){
+					i=i+1;%>
+					
+					<td>
+					<address>
+			<font size="4">  <strong><%=service_data[i].name%></strong></font>
+			  <br>
+			  <%=service_data[i].address%><br>
+			  <abbr title="Phone">Phone:</abbr> <%=service_data[i].phone%>
+			  <br>			
+			  <a href="<%=service_data[i].url%>"><strong> <u> <%=service_data[i].url%></u></strong><br></a>	
+			  <hr>	  
+			</address>
+					</td>
+					<%}%>
+				</tr>
+
+				<%}%>
+			</table>
+		</div>
+  </div>
+  
+  	<!-- <h3>HOUSING AND SHELTER services for <%=service_data[0].cityname%>:</h3> -->
+
+		<!--  	<% for(var i=0;i< service_data.length;i++) {%>
+
+			<address>
+			  <strong><%=service_data[i].name%></strong>
+			  <br>
+			  <%=service_data[i].address%><br>
+			  <abbr title="Phone">Phone:</abbr> <%=service_data[i].phone%>
+			  <br>			
+			  <a href="<%=service_data[i].url%>"><strong> <u> <%=service_data[i].url%></u></strong><br></a>		  
+			</address>
+
+			<%}%> -->
+  </body>
+</html>
