@@ -1,0 +1,342 @@
+    
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <meta name="description" content="Bootstrap_And_jQuery_Website Development">
+    <meta name="author" content="CMPE 280 Neeraj Kumbhar">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Assignment6</title>
+
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+
+
+    <style type="text/css">
+
+      #div1 {
+            margin-top: 60px;
+        }
+
+       #jumbo1 {
+
+            height: 650px;
+            background-color: white;
+       } 
+
+       #img1 {
+            height: 550px;
+            width: 1050px;
+       }
+
+        #img3 {
+
+            height: 100px;
+            width: 80px;
+       }
+       
+       #navlist li
+          {
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+        }
+
+        #p {
+
+          font-size: 20px;
+        }
+
+        .col-sm-3 {
+
+          margin-top: 5px;
+          color: darkgray;
+          
+        }
+        
+        a { 
+          color:darkgray; 
+          text-decoration:none;
+        }
+
+        #accoladesdiv {
+          border-radius: 5px;
+          border: 1px solid darkgray;
+          padding: 10px; 
+          width: 295px;
+          height: 90px;
+          margin-top: 10px;
+          margin-bottom: 10px;  
+        }
+
+    </style>
+
+  </head>
+
+
+  
+  <body role="document">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="home.html">
+            <span class="glyphicon glyphicon-send"></span>
+                    &nbsp <b>Big Data</b></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+               <li><a href="home.html"><b>Home</b></a></li>  
+
+                <li class="dropdown" class="active">
+                   <a href="#" class="dropdown-toggle" id="dLabel" data-toggle="dropdown" role="button"><b>Products</b></a>
+                   <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                          <li><a href="#">
+                           <span class="glyphicon glyphicon-phone"></span>
+                            Mobile</a>
+                          </li>
+
+                          <li class="active"><a href="biddatapage.html">
+                           <span class="glyphicon glyphicon-cloud"></span>
+                            Big Data</a>
+                          </li>
+
+                           <li><a href="iotpage.html">
+                           <span class="glyphicon glyphicon-globe"></span>
+                             IoT</a>
+                          </li>
+                   </ul>
+                </li>
+
+                <li class="dropdown" class="active">
+                   <a href="#" class="dropdown-toggle" id="dLabel" data-toggle="dropdown" role="button"><b>About Us </b></a>
+                   <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                          <li><a href="management.html">
+                           <span class="glyphicon glyphicon-briefcase"></span>
+                            Management</a>
+                          </li>
+
+                          <li><a href="#">
+                           <span class="glyphicon glyphicon-saved"></span>
+                            Code of Conduct</a>
+                          </li>
+
+                          <li><a href="#">
+                           <span class="glyphicon glyphicon-stats"></span>
+                            Business process</a>
+                          </li>
+
+                         <li><a href="locations.html">
+                           <span class="glyphicon glyphicon-phone"></span>
+                            Locations</a>
+                          </li>
+
+                          <li class="divider"></li>
+
+                           <li><a href="contactus.html">
+                           <span class="glyphicon glyphicon-envelope"></span>
+                            Contacts</a>
+                          </li>                  
+                   </ul>
+                </li>
+
+                <li><a href="blogpage.html"><b>Blogs</b></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="div1">
+
+    </div>
+
+
+    <div class="container-fluid">
+          <div class="jumbotron" id="jumbo1">
+
+            <div class="row">  <!-- Row 1 -->
+                <div align="center" class="col-sm-12">
+                    <h2>Big Data</h2>
+                </div>        
+            </div>
+        
+            <div class="row">  <!-- Row 2 -->
+                <div align="center" class="col-sm-12" style="background-color:;">
+                    <p align="justify" style="font-size:120% ;color: #666;" align="center">
+                      According to IDC's prediction in 2013, the market for big data will reach $ 16.1 billion in 2014, growing 6 times faster than the overall IT market.
+                      This kind of business analysis reports brings great business opporunities and strong research interests amoong both academic and indistry communities.
+                      Recently, our Big Data product offerings are organized focusing on Big Data Computing, Big Data sciences and Analytics, and Big Data Technology and Engineering.
+                    </p>
+                 </div>
+            </div>     
+             
+            <br> 
+            <div class="row"> <!-- Row 3 -->
+                 <div align="left" class="col-sm-2"> 
+
+                   <aside style="font-size:small;float:left;width:10px;height=10px">
+                        <img src="img3.jpg" id="img3">
+                        <a href="http://www.appsassociates.com/downloads/Big-Data-Brochure.pdf" download target="_blank">Download Brocure</a>
+
+                        <br> <br>  <br> <br>  
+                        <img src="img4.png" id="img3">
+                        <!-- <a href="http://www.undatarevolution.org/wp-content/uploads/2014/11/A-World-That-Counts.pdf" download target="_blank">Download White Paper</a>  -->
+                         <a href="downloadpage.html">Download White Paper</a> 
+                  
+                    </aside>
+
+                  </div>
+
+                  <div align="left" class="col-sm-7"> 
+                      <iframe style="float:center; margin-top: 10px;" width="600" height="380" src="https://www.youtube.com/embed/z-thCFQKQC4" frameborder="50" allowfullscreen>
+                        
+                     </iframe>  
+
+                  </div>
+
+                  <div align="right" class="col-sm-3"> 
+                          <div class="row" id="accoladesdiv">  
+                          <p align="justify" style="font-size:75% ;color: #666; font-style: italic;" align="center">
+                            Products like the Industrial Data Forwarder show our commitment to evolving with today's emerging technologies to provide 
+                            customers with the best solutions for their businesses," -- <b>Tony Paine, CEO, Kepware</b>
+                          </p>  
+
+                         </div>
+
+                         <div class="row" id="accoladesdiv">  
+                          <p align="justify" style="font-size:75% ;color: #666; font-style: italic;" align="center">
+                            As the organisation migrated to the cloud and scaled out its infrastructure, it needed a tool to aggregate device logs 
+                            and intelligently search them across multiple servers.”— <b>Computer Weekly End User Awards </b>
+                          </p>  
+                          </p>  
+
+                         </div>
+
+                          <div class="row" id="accoladesdiv">  
+                          <p align="justify" style="font-size:75% ;color: #666; font-style: italic;" align="center">
+                            “With a software platform for real-time operational intelligence, this technology allows organizations to search, monitor, 
+                            analyze and visualize machine-generated.”— <b>Database Trends and Applications Magazine's DBTA 100 </b>
+                          </p>  
+                          </p>  
+
+                         </div>
+
+                          <div class="row" id="accoladesdiv">  
+                          <p align="justify" style="font-size:75% ;color: #666; font-style: italic;" align="center">
+                            “Big Data has hit it big. Every company that has reams of data is looking for ways to effectively store, retrieve and interpret 
+                             it all, making the mountain of Big Data much more manageable.”— <b> SD Times </b>
+                          </p>  
+                          </p>  
+
+                         </div>
+                    
+                  </div>
+            </div>                
+       </div>   
+      </div> 
+  </div> <!-- /container -->
+
+
+  <div id="div1"> </div>
+
+  <div style="background-color:#F0F0F5;">
+
+      <footer class="footer">
+        <div class="container">
+          <br><br>
+          <div id="navcontainer">
+            <ul id="navlist">
+             
+            <div class="row">
+              <div class="col-sm-3"><p style="color:black;">PRODUCTS</p></div>
+              <div class="col-sm-3"><p style="color:black;">RESOURCES</p></div>
+              <div class="col-sm-3"><p style="color:black;">ABOUT US</p></div>
+              <div class="col-sm-3"><p style="color:black;">SUPPORT</p></div>
+            </div>
+            <br>
+
+            <div class="row">
+              <div class="col-sm-3"><a href="https://www.heroku.com/platform">Mobile</a></div>
+              <div class="col-sm-3"><a href="management.html">Management</a></div>
+              <div class="col-sm-3"><a href="locations.html">Locations</a></div>
+              <div class="col-sm-3"><a href="downloadpage.html">Help</a></div> 
+            </div>
+
+             <div class="row">
+              <div class="col-sm-3"><a href="bigdatapage.html">Big Data</a></div>
+              <div class="col-sm-3"><a href="">Code of Conduct</a></div>
+              <div class="col-sm-3"><a href="contactus.html">Contact Us</a></div>
+              <div class="col-sm-3"><a href="downloadpage.html">Status</a></div> 
+            </div>
+
+             <div class="row">
+              <div class="col-sm-3"><a href="iotpage.html">Internet Of Things</a></div>
+              <div class="col-sm-3"><a href="iotpage.html">Business Process</a></div>
+              <div class="col-sm-3"><a href="blogpage.html">Blogs</a></div>
+              <div class="col-sm-3"><a href="downloadpage.html">Critical Apps<a/></div> 
+            </div>
+
+             <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-3"></div>
+              <div class="col-sm-3">Careers</div>
+              <div class="col-sm-3"></div> 
+            </div>
+
+             <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-3"></div>
+              <div class="col-sm-3">Partners</div>
+              <div class="col-sm-3"></div> 
+            </div>
+            <br><br><br>
+            <div class="row">
+              <div class="col-sm-2"></div>
+              <div class="col-sm-5" style="text-align:right;">
+                <p style="font-size:11; color:darkgray;">© Copyright 2015 - Designers and Geeks, Inc. All Rights Reserved</p>
+              </div>
+              <div class="col-sm-4" style="text-align: left;">
+                  <div id="navcontainer">
+                       <ul id="navlist">
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-rss"></i></a></li>
+                          <li><a href="//www.cisco.com/cisco/web/siteassets/contacts/index.html"><i style="font-size:25px;" class="fa fa-twitter"></i></a></li>
+                          <li><a href="https://secure.opinionlab.com/ccc01/o.asp?id=jBjOhqOJ"><i style="font-size:25px;" class="fa fa-facebook-square"></i></a></li>
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-github-alt"></i></a></li>
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-linkedin"></i></a></li>
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-google-plus"></i></a></li>
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-pinterest-p"></i></a></li>
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-youtube-play"></i></a></li>
+                       </ul>
+                  </div>        
+              </div>
+            </div>
+
+            </ul>
+        </div>
+
+
+         <br><br>
+      </div>
+    </footer>
+
+  </div> 
+
+  
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

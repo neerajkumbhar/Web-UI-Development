@@ -1,0 +1,284 @@
+    
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <meta name="description" content="Bootstrap_And_jQuery_Website Development">
+    <meta name="author" content="CMPE 280 Neeraj Kumbhar">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Assignment6</title>
+
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+
+
+    <style type="text/css">
+
+      #div1 {
+            margin-top: 30px;
+        }
+
+      
+       #jumbo1 {
+            height: 650px;
+            background-color: white;
+       } 
+       
+       #navlist li
+          {
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+        }
+
+        #p {
+
+          font-size: 20px;
+        }
+
+        .col-sm-3 {
+
+          margin-top: 5px;
+          color: darkgray;
+          
+        }
+        
+        a { 
+          color:darkgray; 
+          text-decoration:none;
+        }
+
+     
+      
+    </style>
+
+  </head>
+
+
+  
+  <body role="document">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="home.html">
+            <span class="glyphicon glyphicon-send"></span>
+                    &nbsp <b>Big Data</b></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="home.html"><b>Home</b></a></li>  
+
+            <li class="dropdown" class="active">
+               <a href="#" class="dropdown-toggle" id="dLabel" data-toggle="dropdown" role="button"><b>Products </b><!-- <span class="caret"></span> -->
+               </a>
+               <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                  <li><a href="#">
+                   <span class="glyphicon glyphicon-phone"></span>
+                    Mobile</a>
+                  </li>
+
+                  <li><a href="biddatapage.html">
+                   <span class="glyphicon glyphicon-cloud"></span>
+                    Big Data</a>
+                  </li>
+
+                   <li class="active"><a href="iotpage.html">
+                   <span class="glyphicon glyphicon-globe"></span>
+                     IoT</a>
+                  </li>
+
+               </ul>
+            </li>
+
+            <li class="dropdown" class="active">
+               <a href="#" class="dropdown-toggle" id="dLabel" data-toggle="dropdown" role="button"><b>About Us</b> 
+               </a>
+               <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                  <li><a href="management.html">
+                   <span class="glyphicon glyphicon-briefcase"></span>
+                    Management</a>
+                  </li>
+
+                  <li><a href="#">
+                   <span class="glyphicon glyphicon-saved"></span>
+                    Code of Conduct</a>
+                  </li>
+
+                  <li><a href="#">
+                   <span class="glyphicon glyphicon-stats"></span>
+                    Business process</a>
+                  </li>
+
+                  <li><a href="locations.html">
+                   <span class="glyphicon glyphicon-phone"></span>
+                    Locations</a>
+                  </li>
+
+                  <li class="divider"></li>
+
+                   <li><a href="contactus.html">
+                   <span class="glyphicon glyphicon-envelope"></span>
+                    Contacts</a>
+                  </li>
+
+
+                  
+               </ul>
+            </li>
+
+            <li><a href="blogpage.html"><b>Blogs</b></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="div1">
+
+    </div>
+
+
+ 
+
+
+    <div class="container-fluid">
+          <div class="jumbotron" id="jumbo1">
+              <form>
+                   <div class="row-fluid">
+                       <h3 style="text-align:center;">Download White Paper</h3>      
+                        <div class="col-md-4 col-md-offset-4">
+                                 <hr> 
+                                 <h4>First Name</h4>
+                                 <div class="form-group">
+                                              <input type="text" placeholder="" class="form-control" required>
+                                 </div>
+                                
+                                 <h4>Last Name</h4>
+                                 <div class="form-group">
+                                              <input type="text" placeholder="" class="form-control" required>
+                                 </div>
+
+                                 <h4>Email</h4>
+                                 <div class="form-group">
+                                              <input type="email" placeholder="joe.dean@example.com" class="form-control" required>
+                                 </div>
+
+                                  <div class="form-group">
+                                  
+                                       
+                                              <button value="download" class="btn btn-md btn-success pull-right">Register</button> 
+                                          
+                                        
+                                              <button type="submit" class="btn btn-md btn-danger pull-left">Cancel</button> 
+                                 </div>
+                        </div>
+              
+                   </div>              
+              </form>        
+          </div>  
+      </div>  <!-- /container -->
+
+
+  <div id="div1"> </div>
+
+  <div style="background-color:#F0F0F5;">
+
+      <footer class="footer">
+        <div class="container">
+          <br><br>
+          <div id="navcontainer">
+            <ul id="navlist">
+             
+            <div class="row">
+              <div class="col-sm-3"><p style="color:black;">PRODUCTS</p></div>
+              <div class="col-sm-3"><p style="color:black;">RESOURCES</p></div>
+              <div class="col-sm-3"><p style="color:black;">ABOUT US</p></div>
+              <div class="col-sm-3"><p style="color:black;">SUPPORT</p></div>
+            </div>
+            <br>
+
+            <div class="row">
+              <div class="col-sm-3"><a href="https://www.heroku.com/platform">Mobile</a></div>
+              <div class="col-sm-3"><a href="management.html">Management</a></div>
+              <div class="col-sm-3"><a href="locations.html">Locations</a></div>
+              <div class="col-sm-3"><a href="downloadpage.html">Help</a></div> 
+            </div>
+
+             <div class="row">
+              <div class="col-sm-3"><a href="bigdatapage.html">Big Data</a></div>
+              <div class="col-sm-3"><a href="">Code of Conduct</a></div>
+              <div class="col-sm-3"><a href="contactus.html">Contact Us</a></div>
+              <div class="col-sm-3"><a href="downloadpage.html">Status</a></div> 
+            </div>
+
+             <div class="row">
+              <div class="col-sm-3"><a href="iotpage.html">Internet Of Things</a></div>
+              <div class="col-sm-3"><a href="iotpage.html">Business Process</a></div>
+              <div class="col-sm-3"><a href="blogpage.html">Blogs</a></div>
+              <div class="col-sm-3"><a href="downloadpage.html">Critical Apps<a/></div> 
+            </div>
+
+             <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-3"></div>
+              <div class="col-sm-3">Careers</div>
+              <div class="col-sm-3"></div> 
+            </div>
+
+             <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-3"></div>
+              <div class="col-sm-3">Partners</div>
+              <div class="col-sm-3"></div> 
+            </div>
+            <br><br><br>
+            <div class="row">
+              <div class="col-sm-2"></div>
+              <div class="col-sm-5" style="text-align:right;">
+                <p style="font-size:11; color:darkgray;">© Copyright 2015 - Designers and Geeks, Inc. All Rights Reserved</p>
+              </div>
+              <div class="col-sm-4" style="text-align: left;">
+                  <div id="navcontainer">
+                       <ul id="navlist">
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-rss"></i></a></li>
+                          <li><a href="//www.cisco.com/cisco/web/siteassets/contacts/index.html"><i style="font-size:25px;" class="fa fa-twitter"></i></a></li>
+                          <li><a href="https://secure.opinionlab.com/ccc01/o.asp?id=jBjOhqOJ"><i style="font-size:25px;" class="fa fa-facebook-square"></i></a></li>
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-github-alt"></i></a></li>
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-linkedin"></i></a></li>
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-google-plus"></i></a></li>
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-pinterest-p"></i></a></li>
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-youtube-play"></i></a></li>
+                       </ul>
+                  </div>        
+              </div>
+            </div>
+
+            </ul>
+        </div>
+
+
+         <br><br>
+      </div>
+    </footer>
+
+  </div> 
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

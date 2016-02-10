@@ -1,0 +1,528 @@
+    
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <meta name="description" content="Bootstrap_And_jQuery_Website Development">
+    <meta name="author" content="CMPE 280 Neeraj Kumbhar">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Assignment6</title>
+
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+
+
+    <style type="text/css">
+
+      #div1 {
+
+            margin-top: 60px;
+
+        }
+
+       #jumbo1 {
+
+            height: 650px;
+
+       } 
+
+       #img1 {
+
+            height: 700px;
+            width: 1400px;
+       }
+       
+       #navlist li
+          {
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+        }
+
+         #p {
+
+          font-size: 20px;
+        }
+
+        #jumbo1 {
+
+          background-color: white;
+
+        }
+
+        .col-sm-3 {
+
+          margin-top: 5px;
+          color: darkgray;
+          
+        }
+
+        .col-md-4 {
+          /*background-color: #D9D9D9;*/
+          background-color: white;
+
+        }
+        
+        a { 
+          color:darkgray; 
+        }
+
+        #mobileimg {
+            height: 100px;
+            width: 170px;
+
+        }
+
+        #bigdataimg {
+            height: 100px;
+            width: 170px;
+        }
+
+        #iotimg {
+            height: 100px;
+            width: 115px;
+
+        }
+
+        #logoimg {
+            height: 10px;
+            width: 10px;
+
+        }
+    </style>
+
+
+    <script>
+        $(document).ready(function() {
+
+       $( '.products' ).hover(
+  function() {
+     $(this).closest('.products').find('.productsDropdown').fadeIn(100);
+    // $( this ).append( $( "<span> ***</span>" ) );
+  }, function() {
+    $(this).closest('.products').find('.productsDropdown').fadeOut(100);
+    // $( this ).find( "span:last" ).remove();
+  }
+);
+
+
+       $( '.aboutUs' ).hover(
+  function() {
+     $(this).closest('.aboutUs').find('.aboutUsDropDown').fadeIn(100);
+    // $( this ).append( $( "<span> ***</span>" ) );
+  }, function() {
+    $(this).closest('.aboutUs').find('.aboutUsDropDown').fadeOut(100);
+    // $( this ).find( "span:last" ).remove();
+  }
+);
+
+
+               // $('.products').on('mouseenter', 'a', function(){
+
+
+               //    $(this).closest('.products').find('.productsDropdown').fadeToggle();
+
+               //  });
+               // $('.products').on('mouseleave', 'a', function(){
+               // $(this).closest('.products').find('.productsDropdown').fadeOut();
+
+               //  });
+
+
+               $('.aboutUs').on('click', 'a', function(){
+
+                  $(this).closest('.aboutUs').find('.aboutUsDropDown').fadeToggle();
+
+                });
+
+               // $('.aboutUs').on('mouseleave', 'a', function(){
+
+               // $(this).closest('.aboutUs').find('.aboutUsDropDown').fadeOut();
+
+               //  });
+
+
+
+        }); 
+    </script>
+  </head>
+  
+  <body role="document">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          
+              <div class="navbar-header">
+                <a class="navbar-brand" href="home.html">
+                  <span class="glyphicon glyphicon-send"></span>
+                  <!-- <img src="logo.jpg" id="logoimg"> -->
+                          <b>Big Data</b></a>
+              </div>
+              
+              <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="home.html"><b>Home</b></a></li>  
+
+                  <li class="dropdown products" class="active">
+                         <a href="#" class="dropdown-toggle" id="dLabel" data-toggle="dropdown" role="button"><b>Products</b></a>
+                         <ul class="dropdown-menu productsDropdown" role="menu" aria-labelledby="dLabel">
+                              <!-- <li><a href="#">
+                               <span class="glyphicon glyphicon-phone"></span>
+                                Mobile</a>
+                              </li>
+
+                              <li><a href="bigdatapage.html">
+                               <span class="glyphicon glyphicon-cloud"></span>
+                                Big Data</a>
+                              </li>
+
+                               <li><a href="iotpage.html">
+                               <span class="glyphicon glyphicon-globe"></span>
+                                 IoT</a>
+                              </li> -->
+                               <div style="background-color:#F0F0F5;">
+
+      <footer class="footer">
+        <div class="container">
+          <br><br>
+          <div id="navcontainer">
+            <ul id="navlist">
+             
+            <div class="row">
+              <div class="col-sm-3"><p style="color:black;">PRODUCTS</p></div>
+              <div class="col-sm-3"><p style="color:black;">RESOURCES</p></div>
+              <div class="col-sm-3"><p style="color:black;">ABOUT US</p></div>
+              <div class="col-sm-3"><p style="color:black;">SUPPORT</p></div>
+            </div>
+            <br>
+
+            <div class="row">
+              <div class="col-sm-3"><a href="https://www.heroku.com/platform">Mobile</a></div>
+              <div class="col-sm-3"><a href="management.html">Management</a></div>
+              <div class="col-sm-3"><a href="locations.html">Locations</a></div>
+              <div class="col-sm-3"><a href="downloadpage.html">Help</a></div> 
+            </div>
+
+             <div class="row">
+              <div class="col-sm-3"><a href="bigdatapage.html">Big Data</a></div>
+              <div class="col-sm-3"><a href="">Code of Conduct</a></div>
+              <div class="col-sm-3"><a href="contactus.html">Contact Us</a></div>
+              <div class="col-sm-3"><a href="downloadpage.html">Status</a></div> 
+            </div>
+
+             <div class="row">
+              <div class="col-sm-3"><a href="iotpage.html">Internet Of Things</a></div>
+              <div class="col-sm-3"><a href="iotpage.html">Business Process</a></div>
+              <div class="col-sm-3"><a href="blogpage.html">Blogs</a></div>
+              <div class="col-sm-3"><a href="downloadpage.html">Critical Apps<a/></div> 
+            </div>
+
+             <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-3"></div>
+              <div class="col-sm-3">Careers</div>
+              <div class="col-sm-3"></div> 
+            </div>
+
+             <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-3"></div>
+              <div class="col-sm-3">Partners</div>
+              <div class="col-sm-3"></div> 
+            </div>
+            <br><br><br>
+            <div class="row">
+              <div class="col-sm-2"></div>
+              <div class="col-sm-5" style="text-align:right;">
+                <p style="font-size:11; color:darkgray;">© Copyright 2015 - Designers and Geeks, Inc. All Rights Reserved</p>
+              </div>
+              <div class="col-sm-4" style="text-align: left;">
+                  <div id="navcontainer">
+                       <ul id="navlist">
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-rss"></i></a></li>
+                          <li><a href="//www.cisco.com/cisco/web/siteassets/contacts/index.html"><i style="font-size:25px;" class="fa fa-twitter"></i></a></li>
+                          <li><a href="https://secure.opinionlab.com/ccc01/o.asp?id=jBjOhqOJ"><i style="font-size:25px;" class="fa fa-facebook-square"></i></a></li>
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-github-alt"></i></a></li>
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-linkedin"></i></a></li>
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-google-plus"></i></a></li>
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-pinterest-p"></i></a></li>
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-youtube-play"></i></a></li>
+                       </ul>
+                  </div>        
+              </div>
+            </div>
+
+            </ul>
+        </div>
+
+
+         <br><br>
+      </div>
+    </footer>
+
+  </div> 
+
+                         </ul>
+                  </li>
+
+                  <li class="dropdown aboutUs" class="active">
+                     <a href="#" class="dropdown-toggle" id="dLabel" data-toggle="dropdown" role="button"><b>About Us</b></a>
+                         <ul class="dropdown-menu aboutUsDropDown" role="menu" aria-labelledby="dLabel">
+                              <li><a href="management.html">
+                               <span class="glyphicon glyphicon-briefcase"></span>
+                                Management</a>
+                              </li>
+
+                              <li><a href="#">
+                               <span class="glyphicon glyphicon-saved"></span>
+                                Code of Conduct</a>
+                              </li>
+
+                              <li><a href="#">
+                               <span class="glyphicon glyphicon-stats"></span>
+                                Business process</a>
+                              </li>
+
+                              <li><a href="locations.html">
+                               <span class="glyphicon glyphicon-phone"></span>
+                                Locations</a>
+                              </li>
+
+                              <li class="divider"></li>
+
+                               <li><a href="contactus.html">
+                               <span class="glyphicon glyphicon-envelope"></span>
+                                Contacts</a>
+                              </li>
+                        </ul>
+                  </li>
+
+                  <li><a href="blogpage.html"><b>Blogs</b></a></li>
+                </ul>
+              </div>
+        </div>
+    </nav>
+
+    <div id="div1">
+
+    </div>
+
+
+
+
+
+       <div class="container-fluid">     
+           <div class="carousel slide" data-ride="carousel" id="carousel-ex">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-ex" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-ex" data-slide-to="1"></li>
+                    <li data-target="#carousel-ex" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="img13.jpg" alt="image" id="img1">
+                        <div class="carousel-caption">
+                       
+                          <!-- <p class="corusaltext">“Sleep, to the homeless thou art home; the friendless find in thee a friend.” 
+                          </p>
+                         <span>Ebenezer Elliott</span>
+                            -->
+                       </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="img15.jpg" alt="image" id="img1">
+                        <div class="carousel-caption">
+                        <!-- 
+                         <p class="corusaltext">“People who are homeless are not social inadequates.They are people without homes.”
+                       </p>
+                        <span>Sheila McKechnie</span> -->
+                    </div>
+                    </div>
+
+                    <div class="item">
+                          <img src="img11.jpg" alt="image" id="img1">
+                          <div class="carousel-caption">
+                              
+                             <!--   <p class="corusaltext">“And homeless near a thousand homes I stood,
+                               And near a thousand tables pined and wanted food.”</p>
+                               <span>William Wordsworth</span>
+                              </div> -->
+                          </div>
+                          
+                          <a href="#carousel-ex" class="left carousel-control" data-slide="prev">
+                              <span class="glyphicon glyphicon-chevron-left"></span>
+                          </a>
+                          
+                          <a href="#carousel-ex" class="right carousel-control" data-slide="next">
+                              <span class="glyphicon glyphicon-chevron-right"></span>
+                          </a>
+                  </div>
+               </div>
+
+
+               <div class="row" style="margin-top:25px;">
+                    <div class="col-md-4"><h4>Mobile </h4>
+                          <div class="row">
+                                  <div class="col-md-4"> 
+                                    <br>
+                                      <img id="mobileimg" src="mobile.jpg">
+                                  </div>
+
+                                  <div class="col-md-8"> 
+                                          <p style="text-align:justify;">
+                                              2014 was a big year for big data, a term that gradually gained momentum to become one of the most talked-about subjects in the tech world. With 2015 fast approaching, prepare for big data’s total domination, as it, along with the Internet of Things, is to be the focus of web and mobile...
+                                               <a href="http://venturebeat.com/2015/01/22/big-data-and-mobile-analytics-ready-to-rule-2015/">Read More</a>  
+
+                                          </p>
+                                  </div>
+                          </div>         
+                    </div>
+
+                    <div class="col-md-4"><h4>Big Data</h4>
+                           <div class="row">
+                                  <div class="col-md-4"> 
+                                      <br>
+                                      <img id="bigdataimg" src="bigdata.jpg">
+                                  </div>
+
+                                  <div class="col-md-8"> 
+                                          <p style="text-align:justify;">
+                                              Heroku runs your apps inside dynos — smart containers on a reliable, fully managed runtime environment. Developers deploy their code written in Node, Ruby, Java, PHP, Python, Go, Scala, or Clojure to a build system which produces an app that's ready for execution. For more details...
+                                             <a href="bigdatapage.html">Read More</a>  
+                                          </p>
+                                  </div>
+                          </div>   
+                    </div>
+
+                    <div class="col-md-4"><h4>IoT</h4>
+                          <div class="row">
+                                  <div class="col-md-4"> 
+                                      <br>
+                                      <img id="iotimg" src="iot.png">
+                                  </div>
+
+                                  <div class="col-md-8"> 
+                                           <p style="text-align:justify;">
+                                              According to a tech-focused research firm report, IoT is expected to grow at a CAGR of 31.72 percent from 2014-2019. So, this is very precise with the insights that IoT is the next mega trend in lots of industries. IoT will potentially be contributing to to industries like businesses in the utilities...
+                                             <a href="https://www.quora.com/What-is-the-scope-and-future-of-the-Internet-of-Things">Read More</a>  
+                                          </p>
+                                  </div>
+                          </div>   
+                    </div>
+
+               </div>
+
+             </div> 
+      <!-- </div>  --> 
+
+    </div> <!-- /container -->
+
+    <div id="div1">
+
+    </div>
+
+  
+
+   <div style="background-color:#F0F0F5;">
+
+      <footer class="footer">
+        <div class="container">
+          <br><br>
+          <div id="navcontainer">
+            <ul id="navlist">
+             
+            <div class="row">
+              <div class="col-sm-3"><p style="color:black;">PRODUCTS</p></div>
+              <div class="col-sm-3"><p style="color:black;">RESOURCES</p></div>
+              <div class="col-sm-3"><p style="color:black;">ABOUT US</p></div>
+              <div class="col-sm-3"><p style="color:black;">SUPPORT</p></div>
+            </div>
+            <br>
+
+            <div class="row">
+              <div class="col-sm-3"><a href="https://www.heroku.com/platform">Mobile</a></div>
+              <div class="col-sm-3"><a href="management.html">Management</a></div>
+              <div class="col-sm-3"><a href="locations.html">Locations</a></div>
+              <div class="col-sm-3"><a href="downloadpage.html">Help</a></div> 
+            </div>
+
+             <div class="row">
+              <div class="col-sm-3"><a href="bigdatapage.html">Big Data</a></div>
+              <div class="col-sm-3"><a href="">Code of Conduct</a></div>
+              <div class="col-sm-3"><a href="contactus.html">Contact Us</a></div>
+              <div class="col-sm-3"><a href="downloadpage.html">Status</a></div> 
+            </div>
+
+             <div class="row">
+              <div class="col-sm-3"><a href="iotpage.html">Internet Of Things</a></div>
+              <div class="col-sm-3"><a href="iotpage.html">Business Process</a></div>
+              <div class="col-sm-3"><a href="blogpage.html">Blogs</a></div>
+              <div class="col-sm-3"><a href="downloadpage.html">Critical Apps<a/></div> 
+            </div>
+
+             <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-3"></div>
+              <div class="col-sm-3">Careers</div>
+              <div class="col-sm-3"></div> 
+            </div>
+
+             <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-3"></div>
+              <div class="col-sm-3">Partners</div>
+              <div class="col-sm-3"></div> 
+            </div>
+            <br><br><br>
+            <div class="row">
+              <div class="col-sm-2"></div>
+              <div class="col-sm-5" style="text-align:right;">
+                <p style="font-size:11; color:darkgray;">© Copyright 2015 - Designers and Geeks, Inc. All Rights Reserved</p>
+              </div>
+              <div class="col-sm-4" style="text-align: left;">
+                  <div id="navcontainer">
+                       <ul id="navlist">
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-rss"></i></a></li>
+                          <li><a href="//www.cisco.com/cisco/web/siteassets/contacts/index.html"><i style="font-size:25px;" class="fa fa-twitter"></i></a></li>
+                          <li><a href="https://secure.opinionlab.com/ccc01/o.asp?id=jBjOhqOJ"><i style="font-size:25px;" class="fa fa-facebook-square"></i></a></li>
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-github-alt"></i></a></li>
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-linkedin"></i></a></li>
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-google-plus"></i></a></li>
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-pinterest-p"></i></a></li>
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-youtube-play"></i></a></li>
+                       </ul>
+                  </div>        
+              </div>
+            </div>
+
+            </ul>
+        </div>
+
+
+         <br><br>
+      </div>
+    </footer>
+
+  </div> 
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

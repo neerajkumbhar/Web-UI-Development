@@ -1,0 +1,437 @@
+    
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <meta name="description" content="Bootstrap_And_jQuery_Website Development">
+    <meta name="author" content="CMPE 280 Neeraj Kumbhar">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Assignment6</title>
+
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+
+
+    <style type="text/css">
+
+      #div1 {
+
+            margin-top: 60px;
+
+        }
+
+      #div2 {
+
+          margin-bottom: 10px;
+            /*margin-top: 60px;*/
+
+        }
+
+       
+       #jumbo1 {
+
+            height: 650px;
+            background-color: white;
+
+       } 
+
+       #img1 {
+
+            height: 550px;
+            width: 1050px;
+       }
+
+        #img3 {
+
+            height: 80px;
+            width: 60px;
+       }
+       
+       #navlist li
+          {
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+        }
+
+        #p {
+
+          font-size: 20px;
+        }
+
+        #panel1 {
+
+          height: 300px;
+          width: 700px;
+        }
+
+         .col-sm-3 {
+
+          margin-top: 5px;
+          color: darkgray;
+          
+        }
+        
+        a { 
+          color:darkgray; 
+          text-decoration:none;
+        }
+      
+    </style>
+
+  </head>
+
+
+  
+  <body role="document">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="home.html">
+            <span class="glyphicon glyphicon-send"></span>
+                    &nbsp Big Data</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="home.html"><b>Home</b></a></li>  
+
+            <li class="dropdown" class="active">
+               <a href="#" class="dropdown-toggle" id="dLabel" data-toggle="dropdown" role="button"><b>Products</b> <!-- <span class="caret"></span> -->
+               </a>
+               <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                  <li><a href="#">
+                   <span class="glyphicon glyphicon-phone"></span>
+                    Mobile</a>
+                  </li>
+
+                  <li><a href="biddatapage.html">
+                   <span class="glyphicon glyphicon-cloud"></span>
+                    Big Data</a>
+                  </li>
+
+                   <li><a href="iotpage.html">
+                   <span class="glyphicon glyphicon-globe"></span>
+                     IoT</a>
+                  </li>
+
+               </ul>
+            </li>
+
+            <li class="dropdown" class="active">
+               <a href="#" class="dropdown-toggle" id="dLabel" data-toggle="dropdown" role="button"><b>About Us</b> <!-- <span class="caret"></span> -->
+               </a>
+               <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                  <li><a href="management.html">
+                   <span class="glyphicon glyphicon-briefcase"></span>
+                    Management</a>
+                  </li>
+
+                  <li><a href="#">
+                   <span class="glyphicon glyphicon-saved"></span>
+                    Code of Conduct</a>
+                  </li>
+
+                  <li><a href="#">
+                   <span class="glyphicon glyphicon-stats"></span>
+                    Business process</a>
+                  </li>
+
+                  <li><a href="locations.html">
+                   <span class="glyphicon glyphicon-phone"></span>
+                    Locations</a>
+                  </li>
+
+                  <li class="divider"></li>
+
+                   <li><a href="contactus.html">
+                   <span class="glyphicon glyphicon-envelope"></span>
+                    Contacts</a>
+                  </li>
+
+
+                  
+               </ul>
+            </li>
+
+           <li class="active"><a href="blogpage.html"><b>Blogs</b></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="div1">
+
+    </div>
+
+
+ 
+
+
+       <div class="container-fluid">
+          <div class="jumbotron" id="jumbo1">
+
+               <div class="row">
+                  <div class="col-sm-3" style="background-color:white;">
+
+                      <div class="row" style="background-color:#FFFEFE;" id="div2"> 
+
+                            <a href="http://www.theinternetofthings.eu/anthill-magazine-%E2%80%98talking%E2%80%99-whisky-bottles-internet-things-creating-new-smart-product-economy-don%E2%80%99t">
+                            <h4>Anthill Magazine: Of ‘talking’ whisky bottles</h4></a>  
+                            <h6 style="color:gray">21/10/2015 - 18:19</h6>
+                            <p  style="font-size:80%;font-weight: 400;color: #666;">
+                                 The Internet of Things is creating a new smart product economy, don’t get left behind.
+                                 A slew of newly connected gadgets and feed personal data into the cloud are driving a wave of interest Internet of Things (IoT). Home...
+                            <a href="http://www.theinternetofthings.eu/anthill-magazine-%E2%80%98talking%E2%80%99-whisky-bottles-internet-things-creating-new-smart-product-economy-don%E2%80%99t">Read More</a>  
+                            </p>
+
+                      </div>
+
+                      <hr>
+                      <div class="row" style="background-color:#FFFEFE;" id="div2">  
+
+                            <a href="http://www.theinternetofthings.eu/brookings-how-internet-things-transforming-global-economy">
+                              <h4>Brookings: How the "Internet of Things" is transforming the global economy</h4>
+                            </a>
+                            <h6 style="color:gray">21/10/2015 - 18:23</h6>
+                            <p  style="font-size:80%;font-weight: 400;color: #666">
+                              The “Internet of Things” defined as the connection of objects a network, and each other, without using a computer — allows unprecedented access to and connectivity across wide swaths. The IoT is poised to revolutionize...                     
+                              <a href="http://www.theinternetofthings.eu/brookings-how-internet-things-transforming-global-economy">  Read More</a>  
+                            </p>
+                      </div>
+
+
+                      <hr>
+                      <div class="row" style="background-color:#FFFEFE;" id="div2"> 
+                            <a href="https://powermore.dell.com/technology/reliable-internet-things-infrastructure/">
+                              <h4>How reliable is the Internet of Things infrastructure?</h4>
+                            </a>
+                            <h6 style="color:gray">21/10/2015 - 18:23</h6>
+                            <p  style="font-size:80%; font-weight: 400;color: #666">
+                            The Internet of Things, the rapidly evolving state of computing where everything from refrigerators to energy grids are connected to the Internet and communicating with each other, will create new challenges for data centers...
+                            <a href="https://powermore.dell.com/technology/reliable-internet-things-infrastructure/">Read More</a>  
+                            </p>
+                      </div>
+
+                       <hr>
+                      <div class="row" style="background-color:#FFFEFE;" id="div2"> 
+                            <a href="http://articles.economictimes.indiatimes.com/2014-04-16/news/49184861_1_paradip-refinery-project-rs-3-crore-bond-offering">
+                                <h4>IOT Infrastructure & Energy Services raises Rs 3000 crore from domestic investors</h4>
+                            </a>
+                            <h6 style="color:gray">21/10/2015 - 18:23</h6>
+                            <p  style="font-size:80%; font-weight: 400;color: #666">
+                            IOT Infrastructure & Energy Services, a joint venture between Indian Oil Corp and Germany's Oiltanking GmbH, has raised Rs 3,000 crore from domestic investors ...
+                            <a href="http://articles.economictimes.indiatimes.com/2014-04-16/news/49184861_1_paradip-refinery-project-rs-3-crore-bond-offering">Read More</a>  
+                            </p>
+                      </div>
+
+                  </div> 
+                  
+                  <div class="col-sm-9" style="background-color:;">
+                      
+                      <div class="row">
+                          <a href="http://www.ibm.com/analytics/us/en/internet-of-things/iot-platform.html?"> 
+                          <div class="col-sm-5" style="background-color:white; border-style:solid; border-color: gray; border-width:1px; margin-bottom: 10px; margin-right: 10px; padding: 25px;"> 
+                                
+                                <div style="width:100%;height:150px;background-image:url('img13.jpg');background-size:cover;margin-top:10px; margin-bottom:5px;">
+                                </div>
+
+                                <p align="center" style="font-size:24px;color:black;">Internet of Things platform</p>
+                                 
+                                <p  style="font-size: 15px; font-weight: 400;color: #666;" align="center">
+                                      IBM’s Internet of Things Foundation provides a simple and powerful IoT platform. Rapidly compose analytics applications, dashboards, and mobile IoT apps. Benefit from a complete cloud-based development and production platform.
+                                </p> 
+
+                                <h4 align="center">Explore Solutions
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                </h4>
+
+ 
+                          </div>
+                        </a>
+
+
+                          
+                        <a href="http://www.ibm.com/analytics/us/en/business/asset-management/"> 
+                          <div class="col-sm-5" style="background-color:white; border-style:solid; border-color: gray; border-width:1px; margin-bottom: 10px; margin-right: 10px; padding: 25px;"> 
+                                
+                                <div style="width:100%;height:150px;background-image:url('img6.jpg');background-size:cover;margin-top:10px; margin-bottom:5px;">
+                                </div>
+
+                                <p align="center" style="font-size:24px;color:black;">Asset Management</p>
+                                 
+                                <p  style="font-size: 15px; font-weight: 400;color: #666;" align="center">
+                                     Gain near real time visibility into asset usage, benifit from predective maintenance, extend the useful life of capital
+                                     equipment, and improve return on asset and defer new purchases in latest trending domains across nation.
+                                </p> 
+
+                                <h4 align="center">Explore Solutions
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                </h4>
+
+ 
+                          </div>
+                        </a>
+                      </div>  <!-- Row -->
+
+                      
+                    
+
+                     <div class="row">
+                           <a href="http://www.ibm.com/analytics/us/en/industry/electronics/index.html"> 
+                          <div class="col-sm-5" style="background-color:white; border-style:solid; border-color: gray; border-width:1px; margin-bottom: 10px; margin-right: 10px; padding: 25px;"> 
+                                
+                                <div style="width:100%;height:150px;background-image:url('img7.jpg');background-size:cover;margin-top:10px; margin-bottom:5px;">
+                                </div>
+
+                                <p align="center" style="font-size:24px;color:black;">Electronics</p>
+                                 
+                                <p  style="font-size: 15px; font-weight: 400;color: #666;" align="center">
+                                     Electronics manufacturers have a constant need for new products. Connecting these products through an Internet of Things platform enables new services that can become as much a competitive differentiator as the physical product itself.
+                                </p> 
+
+                                <h4 align="center">Explore Solutions
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                </h4>
+
+ 
+                          </div>
+                        </a>
+                          
+                           <a href="http://www-935.ibm.com/industries/automotive/connected_car.html"> 
+                          <div class="col-sm-5" style="background-color:white; border-style:solid; border-color: gray; border-width:1px; margin-bottom: 10px; margin-right: 10px; padding: 25px;"> 
+                                
+                                <div style="width:100%;height:150px;background-image:url('img8.jpeg');background-size:cover;margin-top:10px; margin-bottom:5px;">
+                                </div>
+
+                                <p align="center" style="font-size:24px;color:black;">Automotive</p>
+                                 
+                                <p  style="font-size: 15px; font-weight: 400;color: #666;" align="center">
+                                      Capitalize on service opportunities presented by the increasing demand for intelligent, connected vehicles. By leveraging the wealth of data generated by vehicle sensors, vehicle applications and interactions with the drivers.
+                                </p> 
+
+                                <h4 align="center">Explore Solutions
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                </h4>
+
+ 
+                          </div>
+                        </a>
+
+                      </div>  <!-- Row -->
+
+                  </div> 
+                   <!-- <div class="col-sm-2" style="background-color:white;"></div>   -->
+
+                </div>    <!-- Row -->
+          </div>  <!-- jumbotron -->               
+      </div> <!-- container -->
+
+      <br>
+      <br>
+      <br>
+ 
+      <div id="div1"> </div>
+
+ <div style="background-color:#F0F0F5;">
+
+      <footer class="footer">
+        <div class="container">
+          <br><br>
+          <div id="navcontainer">
+            <ul id="navlist">
+             
+            <div class="row">
+              <div class="col-sm-3"><p style="color:black;">PRODUCTS</p></div>
+              <div class="col-sm-3"><p style="color:black;">RESOURCES</p></div>
+              <div class="col-sm-3"><p style="color:black;">ABOUT US</p></div>
+              <div class="col-sm-3"><p style="color:black;">SUPPORT</p></div>
+            </div>
+            <br>
+
+            <div class="row">
+              <div class="col-sm-3"><a href="https://www.heroku.com/platform">Mobile</a></div>
+              <div class="col-sm-3"><a href="management.html">Management</a></div>
+              <div class="col-sm-3"><a href="locations.html">Locations</a></div>
+              <div class="col-sm-3"><a href="downloadpage.html">Help</a></div> 
+            </div>
+
+             <div class="row">
+              <div class="col-sm-3"><a href="bigdatapage.html">Big Data</a></div>
+              <div class="col-sm-3"><a href="">Code of Conduct</a></div>
+              <div class="col-sm-3"><a href="contactus.html">Contact Us</a></div>
+              <div class="col-sm-3"><a href="downloadpage.html">Status</a></div> 
+            </div>
+
+             <div class="row">
+              <div class="col-sm-3"><a href="iotpage.html">Internet Of Things</a></div>
+              <div class="col-sm-3"><a href="iotpage.html">Business Process</a></div>
+              <div class="col-sm-3"><a href="blogpage.html">Blogs</a></div>
+              <div class="col-sm-3"><a href="downloadpage.html">Critical Apps<a/></div> 
+            </div>
+
+             <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-3"></div>
+              <div class="col-sm-3">Careers</div>
+              <div class="col-sm-3"></div> 
+            </div>
+
+             <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-3"></div>
+              <div class="col-sm-3">Partners</div>
+              <div class="col-sm-3"></div> 
+            </div>
+            <br><br><br>
+            <div class="row">
+              <div class="col-sm-2"></div>
+              <div class="col-sm-5" style="text-align:right;">
+                <p style="font-size:11; color:darkgray;">© Copyright 2015 - Designers and Geeks, Inc. All Rights Reserved</p>
+              </div>
+              <div class="col-sm-4" style="text-align: left;">
+                  <div id="navcontainer">
+                       <ul id="navlist">
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-rss"></i></a></li>
+                          <li><a href="//www.cisco.com/cisco/web/siteassets/contacts/index.html"><i style="font-size:25px;" class="fa fa-twitter"></i></a></li>
+                          <li><a href="https://secure.opinionlab.com/ccc01/o.asp?id=jBjOhqOJ"><i style="font-size:25px;" class="fa fa-facebook-square"></i></a></li>
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-github-alt"></i></a></li>
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-linkedin"></i></a></li>
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-google-plus"></i></a></li>
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-pinterest-p"></i></a></li>
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-youtube-play"></i></a></li>
+                       </ul>
+                  </div>        
+              </div>
+            </div>
+
+            </ul>
+        </div>
+
+
+         <br><br>
+      </div>
+    </footer>
+
+  </div> 
+
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

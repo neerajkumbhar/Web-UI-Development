@@ -1,0 +1,410 @@
+    
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <meta name="description" content="Bootstrap_And_jQuery_Website Development">
+    <meta name="author" content="CMPE 280 Neeraj Kumbhar">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Assignment6</title>
+
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+
+
+    <style type="text/css">
+
+      #div1 {
+            margin-top: 60px;
+        }
+
+      
+       #jumbo1 {
+            height: 650px;
+       } 
+
+       #img1 {
+            height: 550px;
+            width: 1050px;
+       }
+
+         #img3 {
+
+            height: 100px;
+            width: 80px;
+       }
+
+       #navlist li
+          {
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+        }
+
+        #p {
+
+          font-size: 20px;
+        }
+
+
+        #jumbo1 {
+
+          background-color: white;
+
+
+        }
+
+         #p {
+
+          font-size: 20px;
+        }
+
+        #jumbo1 {
+
+          background-color: white;
+
+        }
+
+        .col-sm-3 {
+
+          margin-top: 5px;
+          color: darkgray;
+          
+        }
+        
+        a { 
+          color:darkgray; 
+          text-decoration:none;
+        }
+
+        #imgsensor {
+          height: 200px;
+          width: 200px;
+
+        }
+
+         #imgsensor1 {
+          height: 200px;
+          width: 230px;
+
+        }
+
+        #sensordiv {
+
+          border-radius: 0px;
+          border: 2px solid lightgray;
+          padding: 20px; 
+          width: 330px;
+          height:300px;
+          text-align: center;
+          padding-left: 10px;
+         }
+
+          #accoladesdiv {
+          border-radius: 5px;
+          border: 1px solid darkgray;
+          padding: 10px; 
+          width: 295px;
+          height: 90px;
+          margin-top: 10px;
+          margin-bottom: 10px;  
+
+        }
+
+      
+    </style>
+
+  </head>
+
+
+  
+  <body role="document">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="home.html">
+            <span class="glyphicon glyphicon-send"></span>
+                    &nbsp <b>Big Data</b></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="home.html"><b>Home</b></a></li>  
+
+            <li class="dropdown" class="active">
+               <a href="#" class="dropdown-toggle" id="dLabel" data-toggle="dropdown" role="button"><b>Products </b><!-- <span class="caret"></span> -->
+               </a>
+               <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                  <li><a href="#">
+                   <span class="glyphicon glyphicon-phone"></span>
+                    Mobile</a>
+                  </li>
+
+                  <li><a href="biddatapage.html">
+                   <span class="glyphicon glyphicon-cloud"></span>
+                    Big Data</a>
+                  </li>
+
+                   <li class="active"><a href="iotpage.html">
+                   <span class="glyphicon glyphicon-globe"></span>
+                     IoT</a>
+                  </li>
+
+               </ul>
+            </li>
+
+            <li class="dropdown" class="active">
+               <a href="#" class="dropdown-toggle" id="dLabel" data-toggle="dropdown" role="button"><b>About Us</b> <!-- <span class="caret"></span> -->
+               </a>
+               <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                  <li><a href="management.html">
+                   <span class="glyphicon glyphicon-briefcase"></span>
+                    Management</a>
+                  </li>
+
+                  <li><a href="#">
+                   <span class="glyphicon glyphicon-saved"></span>
+                    Code of Conduct</a>
+                  </li>
+
+                  <li><a href="#">
+                   <span class="glyphicon glyphicon-stats"></span>
+                    Business process</a>
+                  </li>
+
+                    <li><a href="locations.html">
+                   <span class="glyphicon glyphicon-phone"></span>
+                    Locations</a>
+                  </li>
+
+                  <li class="divider"></li>
+
+                   <li><a href="contactus.html">
+                   <span class="glyphicon glyphicon-envelope"></span>
+                    Contacts</a>
+                  </li>
+
+
+                  
+               </ul>
+            </li>
+
+            <li><a href="blogpage.html"><b>Blogs</b></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="div1">
+
+    </div>
+
+
+ 
+
+
+    <div class="container-fluid">
+          <div class="jumbotron" id="jumbo1">
+
+                  <div class="row" style="margin-bottom: 10px;">  <!-- Row 1 -->
+                      <div align="center" class="col-sm-12">
+                          <h2>Internet Of Things</h2>
+                      </div>        
+                  </div>
+                  
+                  <div class="row">  <!-- Row 2 -->
+                      <div align="center" class="col-sm-12" style="background-color:;">
+                          <p align="justify" style="font-size:120%">
+                            Gartner defines Internet Of Things "is the network of physical objects that contain embedded technology to communicate and sense 
+                            or interact with their internal states or external environment." As Per International Data Cooperation (IDC) press release "The Internet 
+                            Of Things is Poised to Change Everything". The Internet of Things (IoT) represents a new construct in the information and communications technology (ICT)
+                            world that is occupying the minds of IT vendors, services providers, and system integrators as it represents huge potential for new streams of revenur and new customers.
+                             Gartner defines Internet Of Things "is the network of physical objects that contain embedded technology to communicate and sense 
+                            or interact with their internal states or external environment." As Per International Data Cooperation (IDC) press release "The Internet 
+                            Of Things is Poised to Change Everything". The Internet of Things (IoT) represents a new construct in the information and communications technology (ICT)
+                            world that is occupying the minds of IT vendors, services providers, and system integrators as it represents huge potential for new streams of revenur and new customers.
+                            
+                          </p>
+                       </div>
+                  </div>     
+                       
+                  <br> 
+                  <div class="row"> <!-- Row 3 -->
+                       <div align="left" class="col-sm-2"> 
+                             <aside style="font-size:small;float:left;width:10px;height=10px">
+                                  <img src="img3.jpg" id="img3">
+                                  <a href="http://www.appsassociates.com/downloads/Big-Data-Brochure.pdf" download target="_blank">Download Brocure</a>
+
+                                  <br> <br>  <br> <br>  
+                                  <img src="img4.png" id="img3">
+                               <!--    <a href="http://www.undatarevolution.org/wp-content/uploads/2014/11/A-World-That-Counts.pdf" download target="_blank">Download White Paper</a> 
+ -->                                   <a href="downloadpage.html">Download White Paper</a> 
+                              </aside>
+                       </div>
+                       
+
+                       <!-- <div class="col-sm-7" style="height:300px; width:500px;">  -->
+                       <div class="col-sm-7"> 
+                          <h4>Our Offer Pricings</h4>
+
+                            <div class="row"> 
+                                  <div id="sensordiv" class="col-md-6">
+                                      <img src="sensor1.jpeg" id="imgsensor1">
+                                      <span class="label label-success">Number of Sensors: 30</span>
+                                      <span class="label label-primary">Data Stream: 30kb/sec</span>
+                                      <span class="label label-warning">Price: $30/month</span>
+                                  </div>                  
+                                  
+                                  <div id="sensordiv" class="col-md-6"> 
+                                      <img src="Sensor2.png" id="imgsensor">
+                                      <span class="label label-success">Number of Sensors: 30</span>
+                                      <span class="label label-primary">Data Stream: 30kb/sec</span>
+                                      <span class="label label-warning">Price: $30/month</span>
+                                  </div>                  
+                            </div>
+                       </div>
+
+
+                       <div align="right" class="col-sm-3"> 
+                              <div class="row" id="accoladesdiv">  
+                              <p align="justify" style="font-size:75% ;color: #666; font-style: italic;" align="center">
+                                The formal recognition of the .onion as a Special-use Domain Name by the IETF is "a small and important landmark in the movement to build privacy into the structure of the Internet," says privacy pro <b>Jacob Appelbaum. </b>
+                              </p>  
+
+                             </div>
+
+                             <div class="row" id="accoladesdiv">  
+                              <p align="justify" style="font-size:75% ;color: #666; font-style: italic;" align="center">
+                                I'm mainly basing my opinion on dcrainmaker's review, but have seen other reviews about the inaccuracy. I primarily ride the bike so maybe but issues like others who have to swing their arms a lot more. -- <b> Richard Martin</b>
+                              </p>  
+                              </p>  
+
+                             </div>
+
+                              <div class="row" id="accoladesdiv">  
+                              <p align="justify" style="font-size:75% ;color: #666; font-style: italic;" align="center">
+                                “it was hard to get used to , & to get set up on iTunes. wish I could tell my steps on band instead of having to plug into my phone to check”— <b>Bonnie R.</b>
+                              </p>  
+                              </p>  
+
+                             </div>
+
+                              <div class="row" id="accoladesdiv">  
+                              <p align="justify" style="font-size:75% ;color: #666; font-style: italic;" align="center">
+                                “The UP model is just a basic fitness monitor and tracking device but the UP software is fantastic, and very intuitive and concise graphical and descriptive analysis of daily activities”— <b> Brian B </b>
+                              </p>  
+                              </p>  
+
+                             </div>
+                        </div>     
+
+                  </div>             
+         
+          </div>  
+      </div>  <!-- /container -->
+
+
+   <div id="div1"> </div>
+
+  <div style="background-color:#F0F0F5;">
+
+      <footer class="footer">
+        <div class="container">
+          <br><br>
+          <div id="navcontainer">
+            <ul id="navlist">
+             
+            <div class="row">
+              <div class="col-sm-3"><p style="color:black;">PRODUCTS</p></div>
+              <div class="col-sm-3"><p style="color:black;">RESOURCES</p></div>
+              <div class="col-sm-3"><p style="color:black;">ABOUT US</p></div>
+              <div class="col-sm-3"><p style="color:black;">SUPPORT</p></div>
+            </div>
+            <br>
+
+            <div class="row">
+              <div class="col-sm-3"><a href="https://www.heroku.com/platform">Mobile</a></div>
+              <div class="col-sm-3"><a href="management.html">Management</a></div>
+              <div class="col-sm-3"><a href="locations.html">Locations</a></div>
+              <div class="col-sm-3"><a href="downloadpage.html">Help</a></div> 
+            </div>
+
+             <div class="row">
+              <div class="col-sm-3"><a href="bigdatapage.html">Big Data</a></div>
+              <div class="col-sm-3"><a href="">Code of Conduct</a></div>
+              <div class="col-sm-3"><a href="contactus.html">Contact Us</a></div>
+              <div class="col-sm-3"><a href="downloadpage.html">Status</a></div> 
+            </div>
+
+             <div class="row">
+              <div class="col-sm-3"><a href="iotpage.html">Internet Of Things</a></div>
+              <div class="col-sm-3"><a href="iotpage.html">Business Process</a></div>
+              <div class="col-sm-3"><a href="blogpage.html">Blogs</a></div>
+              <div class="col-sm-3"><a href="downloadpage.html">Critical Apps<a/></div> 
+            </div>
+
+             <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-3"></div>
+              <div class="col-sm-3">Careers</div>
+              <div class="col-sm-3"></div> 
+            </div>
+
+             <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-3"></div>
+              <div class="col-sm-3">Partners</div>
+              <div class="col-sm-3"></div> 
+            </div>
+            <br><br><br>
+            <div class="row">
+              <div class="col-sm-2"></div>
+              <div class="col-sm-5" style="text-align:right;">
+                <p style="font-size:11; color:darkgray;">© Copyright 2015 - Designers and Geeks, Inc. All Rights Reserved</p>
+              </div>
+              <div class="col-sm-4" style="text-align: left;">
+                  <div id="navcontainer">
+                       <ul id="navlist">
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-rss"></i></a></li>
+                          <li><a href="//www.cisco.com/cisco/web/siteassets/contacts/index.html"><i style="font-size:25px;" class="fa fa-twitter"></i></a></li>
+                          <li><a href="https://secure.opinionlab.com/ccc01/o.asp?id=jBjOhqOJ"><i style="font-size:25px;" class="fa fa-facebook-square"></i></a></li>
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-github-alt"></i></a></li>
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-linkedin"></i></a></li>
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-google-plus"></i></a></li>
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-pinterest-p"></i></a></li>
+                          <li><a href="//www.cisco.com/web/help/index.html"><i style="font-size:25px;" class="fa fa-youtube-play"></i></a></li>
+                       </ul>
+                  </div>        
+              </div>
+            </div>
+
+            </ul>
+        </div>
+
+
+         <br><br>
+      </div>
+    </footer>
+
+  </div> 
+
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
