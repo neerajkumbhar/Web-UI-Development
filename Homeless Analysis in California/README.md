@@ -16,7 +16,7 @@
 -Technologies: Javascript, HTML5, CSS, BootStrap,NodeJS, MySQL and Redis
 
 Application URL: http://ec2-54-148-134-204.us-west-2.compute.amazonaws.com:3000/
-Git Hub URL: https://github.com/NehaWani/CmpE272_Team22
+
 
 
 
