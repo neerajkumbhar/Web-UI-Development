@@ -1,0 +1,4 @@
+- Designed a responsive website using Bootstrap,HTML5, CSS, jQuery, JavaScript.
+- Pages include: Main Landing Page, Big Data Page, IoT Page, Blog Page, Management Page, Download Page, and Locations Page.
+- Used Google Maps API to show the locations at which the company is based.
+- User can download the White Paper/brochure upon registering to the website. Download page needs to save brochure information in MySQL database(Ajax enabled).
