@@ -1,0 +1,5 @@
+Every company page consists of companies location with markers on
+google maps. This has been created using the same concept where flags
+are placed on company’s various locations. Data is read from Json file
+about the companies location and it also uses a big circle around it to
+plot the revenue of that particular location
