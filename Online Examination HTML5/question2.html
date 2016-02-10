@@ -1,0 +1,257 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Assignment1</title>
+<meta name="author" content="Neeraj Kumbhar"/>
+<meta name="description" content="HTML5 MARK-DATALIST SCORM - SCOs"/>
+<meta name="application name" content="Online Examination"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<link rel="stylesheet" href="css/styles.css">
+<style>
+  
+  article {
+  width: 1100px;
+}
+
+
+</style>
+
+<script>
+    function clearFunction() {
+          document.getElementById('radio1').checked=false;
+          document.getElementById('radio2').checked=false;
+          document.getElementById('radio3').checked=false;
+          document.getElementById('radio4').checked=false;
+
+    }
+</script>
+
+
+</head>
+
+<body>
+
+
+<article>
+	<header>
+		<hgroup>
+			<h1 align = "center">
+				Question 2</h1>
+
+		</hgroup>
+	</header> 
+
+	 <section> 
+			<p>Select the cosine theorem formula</p>
+			<br> <br>
+  				<br> <br>
+  				<br> <br>
+  	
+
+		<form id="form1" onsubmit="return checkAnswer('quant', 2);" action="question3.html">
+
+			<table style="width:40%" align = "left" cellspacing="10">
+  				<tr>
+    				<td><input type="radio" id="radio1" name="option" value="option1"></td>	
+    				<td>
+    					<math xmlns="http://www.w3.org/1998/Math/MathML">
+ 							 <mi>cos</mi>
+               <mo>(</mo>
+               <mi>&#x3B1;</mi>
+               <mo>&#x00B1;</mo>
+ 							 <mi>&#x3B2;</mi> 
+               <mo>)</mo>
+               <mo>=</mo>
+
+                <mi>cos</mi> <mi>&#x3B1;</mi>
+                <mi>cos</mi> <mi>&#x3B2;</mi>
+                <mo>&#x00B1;</mo>
+                <mi>sin</mi> <mi>&#x3B1;</mi>
+                <mi>sin</mi> <mi>&#x3B2;</mi>
+						</math>
+    				</td>	
+  				</tr>
+  			</table>
+
+  			<table style="width:40%">
+  				<tr>
+    				<td><input type="radio"  id="radio2"  name="option" value="option2">  </td>
+    				<td> 
+    					<td>
+              <math xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>sin</mi>
+               <mo>(</mo>
+               <mi>&#x3B1;</mi>
+               <mo>&#x00B1;</mo>
+               <mi>&#x3B2;</mi> 
+               <mo>)</mo>
+               <mo>=</mo>
+
+                <mi>sin</mi> <mi>&#x3B1;</mi>
+                <mi>cos</mi> <mi>&#x3B2;</mi>
+                <mo>&#x00B1;</mo>
+                <mi>cos</mi> <mi>&#x3B1;</mi>
+                <mi>sin</mi> <mi>&#x3B2;</mi>
+            </math>
+            </td> 
+  				<tr>
+  			</table> 
+
+				<br> <br> <br>
+				
+  				<table style="width:40%" align = "left">
+  				<tr>
+    				<td><input type="radio"  id="radio3"  name="option" value="option3">  </td>
+    				<td>
+    					<math xmlns="http://www.w3.org/1998/Math/MathML">
+ 							 <mi>sin</mi> <mi>&#x3B1;</mi>
+ 							 <mo>+</mo> 
+               <mi>sin</mi> <mi>&#x3B2;</mi>
+
+ 							 <mo>=</mo> 
+
+
+ 							 <mi>2</mi>
+               <mi>sin</mi>
+ 							 <mo>(</mo>
+                <mrow>
+                  <mfrac>
+                      <mrow>
+                          
+                        <mi>&#x3B1;</mi>
+                      <mo>+</mo> 
+                      <mi>&#x3B2;</mi>
+                      </mrow>
+                      
+                      <mrow> 
+                        <mi>2</mi> 
+                      </mrow>
+                   </mfrac>
+                </mrow>
+               <mo>)</mo>
+                
+               <mi>cos</mi>
+               <mo>(</mo>
+                <mrow>
+                  <mfrac>
+                      <mrow>
+                          
+                      <mi>&#x3B1;</mi>
+                      <mo>-</mo> 
+                      <mi>&#x3B2;</mi>
+                      </mrow>
+                      
+                      <mrow> 
+                        <mi>2</mi> 
+                      </mrow>
+                   </mfrac>
+                </mrow>
+               <mo>)</mo>
+  							 
+						</math>
+    				</td>		
+  				<tr>
+  			</table>
+
+			<table style="width:40%" align = "left">
+  				<tr>
+    				<td><input type="radio"  id="radio4"  name="option" value="option4">  </td>
+    			         <td>
+              <math xmlns="http://www.w3.org/1998/Math/MathML">
+               <mi>sin</mi> <mi>&#x3B1;</mi>
+               <mo>-</mo> 
+               <mi>sin</mi> <mi>&#x3B2;</mi>
+
+               <mo>=</mo> 
+
+
+               <mi>2</mi>
+               <mi>cos</mi>
+               <mo>(</mo>
+                <mrow>
+                  <mfrac>
+                      <mrow>
+                          
+                        <mi>&#x3B1;</mi>
+                      <mo>+</mo> 
+                      <mi>&#x3B2;</mi>
+                      </mrow>
+                      
+                      <mrow> 
+                        <mi>2</mi> 
+                      </mrow>
+                   </mfrac>
+                </mrow>
+               <mo>)</mo>
+                
+              
+               <mi>sin</mi>
+               <mo>(</mo>
+                <mrow>
+                  <mfrac>
+                      <mrow>
+                          
+                      <mi>&#x3B1;</mi>
+                      <mo>-</mo> 
+                      <mi>&#x3B2;</mi>
+                      </mrow>
+                      
+                      <mrow> 
+                        <mi>2</mi> 
+                      </mrow>
+                   </mfrac>
+                </mrow>
+               <mo>)</mo>
+                 
+            </math>
+            </td>   
+  				<tr>
+  			</table>
+    							 
+		</form>
+		<br> <br> <br> <br>	
+<br> <br> 
+   
+
+
+    <table style="width:40%">
+       <tr>
+        <td>
+          <button type="submit" id="button"  form="form1" value="Submit & Next Question" 
+          style="height:40px;width:180px">
+          <b>Submit & Next Question </b>
+          </button>
+          <!-- <input type="submit" name="next" value="Submit & Next Question" align="left"> -->
+        </td>   
+
+        <td>
+          <button type="submit" id="button"  onclick="clearFunction()" value="Cancel & Clear Selection" 
+          style="height:40px;width:180px">
+          <b>Cancel & Clear Selection</b>
+          </button>
+        </td>
+     </tr>
+
+
+    </table>  
+						
+	 </section>
+
+</article>
+
+<footer align="center">
+  <div>
+  <p style="color:#C0C0C0;">Posted by: Neeraj Kumbhar : SJSU ID -009990760</p>
+  <p style="color:#C0C0C0;">Contact information: <a href="mailto:neeraj.kumbhar@sjsu.edu">neeraj.kumbhar@sjsu.edu</a>.</p>
+</div>
+</footer>
+
+<script type="text/javascript" src='js/quiz.js'></script>
+
+</body>
+</html>

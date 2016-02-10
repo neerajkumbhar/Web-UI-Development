@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<p> Please input number form 1 to 10 </p>
+	<input id="number" type="text">
+	<button type = "button" onmouseover="myfunction()"> submit </button>
+
+		<p id="demo"> </p>
+
+	<script>
+		function myfunction() {
+
+				var x, text;
+
+				x = document.getElementById("number").value;
+
+				text = x;
+
+				document.getElementById("demo").innerHTML = text;
+		}
+	</script>
+
+
+	<p id="mypar"> this is paragraph </p>
+	<div id = "mydiv"> this is a div </div>
+
+	<hr></hr>
+	<button type = "button" onclick="myfunction2()"> click here </button>
+
+	<script type="text/javascript">
+		function myfunction2() {
+
+			document.getElementById("mypar").innerHTML = "Hello there";
+			document.getElementById("mydiv").innerHTML = "Bye Bye";
+		}
+	</script>
+
+
+</body>
+</html>
+

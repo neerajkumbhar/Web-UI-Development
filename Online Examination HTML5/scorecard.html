@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Assignment1</title>
+<meta name="author" content="Neeraj Kumbhar"/>
+<meta name="description" content="HTML5 MARK-DATALIST SCORM - SCOs"/>
+<meta name="application name" content="Online Examination"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<link rel="stylesheet" href="css/styles.css">
+<style>
+  
+  article {
+  width: 1100px;
+}
+
+</style>
+
+<script type="text/javascript">
+
+var ansArray = JSON.parse(localStorage.getItem("ans"));
+
+  function calQuant(){
+
+    
+    var quantAns = ansArray[0];
+
+    document.getElementById("quantAnsArea").innerHTML = quantAns;
+    document.getElementById("quantScoreArea").innerHTML = quantAns * 25;
+
+  }
+
+  function calRead(){
+
+    
+
+    var quantAns = ansArray[1];
+
+    document.getElementById("readAnsArea").innerHTML = quantAns;
+    document.getElementById("readScoreArea").innerHTML = quantAns * 25;
+
+  }
+
+  function calAv(){
+
+    
+
+    var quantAns = ansArray[2];
+
+    document.getElementById("avAnsArea").innerHTML = quantAns;
+    document.getElementById("avScoreArea").innerHTML = quantAns * 25;
+
+  }
+
+  function calScore(){
+    calQuant();
+    calRead();
+    calAv();
+  }
+  </script>
+
+</head>
+
+<body onload="calScore();">
+
+
+<article>
+	<header>
+		<hgroup>
+			<h1 align = "center">
+				Scorecard</h1>
+		</hgroup>
+	</header> 
+
+<br> <br>
+	 <section> 
+
+    <details>
+      <summary>Quantative Section</summary>
+      
+      <ul>
+        <li>
+          <strong>Number of Questions:</li> 2<br> 
+        <li>Number of Correct Answers: <p id='quantAnsArea'> </p></li> <br>
+        <li>Score: <p id='quantScoreArea'> </p></li>
+        <br>
+          </strong>
+      </ul>
+    </details>
+    <br>
+
+    <details>
+      <summary>Reading Section</summary>
+      
+      <ul>
+        <li>
+            <strong>Number of Questions:</li> 1<br> 
+        <li>Number of Correct Answers: <p id='readAnsArea'> </p></li> <br>
+        <li>Score: <p id='readScoreArea'> </p></li><br>
+          </strong>
+      </ul>
+    </details>
+    <br>
+
+    <details>
+      <summary>Audio/Video Section</summary>
+      
+      <ul>
+        <li>
+          <strong>Number of Questions:</li> 1<br> 
+        <li>Number of Correct Answers: <p id='avAnsArea'> </p></li> <br>
+        <li>Score: <p id='avScoreArea'> </p></li><br>
+      </strong>
+      </ul>
+    </details>
+
+<br>
+
+<form id="form1" action="login.html">
+  <div align = "center">
+      <p>
+       <font size="5"> Thank you!!!
+       </font>
+      </p>
+      <br>
+      
+      <!-- 
+      <button type="submit" id="button" form="form1" value="finish" 
+      style="height:40px;width:180px">
+      <b>Finish </b> -->
+
+      <button type="submit" id="button" form="form1" value="finish" style="height:40px;width:180px">
+      <b>Finish </b>
+      </button>
+  </div> 
+</form>
+
+	 </section>
+
+  </article>
+
+  <footer align="center">
+    <div>
+      <p style="color:#C0C0C0;">Posted by: Neeraj Kumbhar : SJSU ID -009990760</p>
+      <p style="color:#C0C0C0;">Contact information: <a href="mailto:neeraj.kumbhar@sjsu.edu">neeraj.kumbhar@sjsu.edu</a>.</p>
+    </div>
+  </footer>
+
+  
+
+
+</body>
+</html>

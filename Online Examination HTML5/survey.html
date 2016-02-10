@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Assignment1</title>
+<meta name="author" content="Neeraj Kumbhar"/>
+<meta name="description" content="HTML5 MARK-DATALIST SCORM - SCOs"/>
+<meta name="application name" content="Online Examination"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<link rel="stylesheet" href="css/styles.css">
+<style>
+  
+  article {
+  width: 1100px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<article>
+	<header>
+		<hgroup>
+			<h1 align = "center">
+				Survey</h1>
+
+		</hgroup>
+	</header> 
+
+	 <section> 
+    <br><br>
+			<p>How do you like the center?</p>
+      <p>Comments: </p>
+      <textarea id='textarea1' style="width:70%;" rows="8" autofocus>
+       </textarea>
+			 
+       <br> 
+  
+
+       <table style="width:40%" align = "left">   
+          <tr>
+            <td><p>
+              <font size="5">Select Text Area Location:
+               </font> 
+            </p>
+            </td>  
+            <!-- <td><p>Select Room Number:</p></td>  --> 
+           </tr> 
+
+           <tr>
+              <td>
+                  <form id="form1" action="scorecard.html">
+                    <p>City:</p>
+                     <input type="text" id="cityId" name="inputCity" list="CityTechList"/>
+                      <datalist id="CityTechList">
+                              <option value="San Jose">
+                              <option value="Santa Clara">
+                              <option value="Los Angeles">
+                              <option value="San Mateo">
+                              <option value="Santa Cruz">
+                              <option value="Ventura">
+                              <option value="Merced">
+                              <option value="Vinci">
+                              <option value="Alameda">
+                              <option value="Fresno">
+                              <option value="Dali City">
+                              <option value="Sonama">
+                              <option value="Monterey">
+                              <option value="Tulare">
+                              <option value="Santa Barbara">
+                              <option value="El Darado">
+                              <option value="Kern">
+                       </datalist>
+                           <!-- <p>
+                            <label> This is your favorite Data Analytics Technology:
+                                  <output name="myOutput" onforminput="this.value=DataAnalyticsTechList.value" />
+                            </label> 
+                            </p> -->
+                            <!-- </fieldset> -->  
+                   </form> 
+              </td>
+
+
+              <td>
+                  <form id="form1" action="scorecard.html">
+                    <p>Room Number:</p>
+                     <input type="text" id="roomId" name="inputRoom" list="RoomTechList"/>
+                      <datalist id="RoomTechList">
+                              <option value="Room 201">
+                              <option value="Room 202">
+                              <option value="Room 203">
+                              <option value="Room 204">
+                              <option value="Room 301">
+                              <option value="Room 302">
+                              <option value="Room 303">
+                              <option value="Room 304">
+                              <option value="Room 401">
+                              <option value="Room 402">
+                              <option value="Room 403">
+                              <option value="Room 404">
+                              <option value="Room 501">
+                              <option value="Room 502">
+                              <option value="Room 503">
+                              <option value="Room 504">
+                              <option value="Room 601">
+                       </datalist>
+                           <!-- <p>
+                            <label> This is your favorite Data Analytics Technology:
+                                  <output name="myOutput" onforminput="this.value=DataAnalyticsTechList.value" />
+                            </label> 
+                            </p> -->
+                            <!-- </fieldset> -->  
+                   </form> 
+              </td>
+
+           </tr>
+        </table>
+
+
+
+	
+    <br> <br> 
+    <br> <br>	
+
+    <br> <br> 
+    <br> <br> 
+    <br> 
+
+    <table style="width:40%">
+       <tr>
+        <td>
+          <button type="submit" id="button" form="form1" value="Submit & Next Question" 
+          style="height:40px;width:180px">
+          <b>Submit & Get Score </b>
+          </button>
+          <!-- <input type="submit" name="next" value="Submit & Next Question" align="left"> -->
+        </td>   
+
+        <td>
+          <button type="submit" id="button" form="form1"  value="Cancel & Clear Selection" 
+          style="height:40px;width:180px">
+          <b>Skip and Get Score </b>
+          </button>
+        </td>
+     </tr>
+
+
+    </table>  
+						
+	 </section>
+
+</article>
+
+<footer align="center">
+  <div>
+  <p style="color:#C0C0C0;">Posted by: Neeraj Kumbhar : SJSU ID -009990760</p>
+  <p style="color:#C0C0C0;">Contact information: <a href="mailto:neeraj.kumbhar@sjsu.edu">neeraj.kumbhar@sjsu.edu</a>.</p>
+</div>
+</footer>
+
+
+</body>
+  </html>

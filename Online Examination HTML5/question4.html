@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Assignment1</title>
+<meta name="author" content="Neeraj Kumbhar"/>
+<meta name="description" content="HTML5 MARK-DATALIST SCORM - SCOs"/>
+<meta name="application name" content="Online Examination"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<link rel="stylesheet" href="css/styles.css">
+<style>
+  
+  article {
+  width: 1100px;
+  padding-bottom: 40px;
+}
+
+</style>
+
+
+<script>
+    function clearFunction() {
+          document.getElementById('radio1').checked=false;
+          document.getElementById('radio2').checked=false;
+          document.getElementById('radio3').checked=false;
+          document.getElementById('radio4').checked=false;
+    }
+</script>
+
+
+</head>
+
+<body>
+
+
+<article>
+	<header>
+		<hgroup>
+			<h1 align = "center">
+				Question 4</h1>
+
+		</hgroup>
+	</header> 
+
+	 <section> 
+			<p style="position:absolute; width: 500px;">Watch the video and answer the following question. What is the source as mentioned in the video?</p>
+
+      <aside style="font-size:medium;float:right;width:500px;">
+      <iframe style="clear:left; float:left; margin-top: 10px;" width="480" height="330" src="https://www.youtube.com/embed/5Zg-C8AAIGg" frameborder="0" allowfullscreen>
+      </iframe>
+      </aside>
+
+    	<br> <br>
+  		<br> <br>
+ 
+
+		<form id="form1" onsubmit="return checkAnswer('av', 4);" action="survey.html">
+
+			<table style="width:300px; height:200px; " align = "left">
+  				<tr>
+    				<td><input type="radio" id="radio1" name="option" value="option1"> NASA.Gov</td>	
+    					
+
+            <td><input type="radio" id="radio2" name="option" value="option2"> Ted.edu</td>  
+          </tr>
+          <tr>
+            <td><input type="radio" id="radio3" name="option" value="option3"> Facebook</td>  
+              
+
+            <td><input type="radio" id="radio4" name="option" value="option4"> Data.Gov</td>  
+          </tr>  
+      </table>
+
+		</form>
+		
+    <br> <br> <br> <br>	
+    <br> <br> <br> <br> 
+   
+
+
+    <table style="width:40%">
+       <tr>
+        <td>
+          <button type="submit" id="button" form="form1" value="Submit & Next Question" 
+          style="height:40px;width:180px">
+          <b>Submit & Next Question </b>
+          </button>
+          <!-- <input type="submit" name="next" value="Submit & Next Question" align="left"> -->
+        </td>   
+
+        <td>
+          <button type="submit" id="button" onclick="clearFunction()" value="Cancel & Clear Selection" 
+          style="height:40px;width:180px">
+          <b>Cancel & Clear Selection</b>
+          </button>
+        </td>
+     </tr>
+
+
+    </table>  
+						
+	 </section>
+
+</article>
+
+<footer align="center">
+  <div>
+  <p style="color:#C0C0C0;">Posted by: Neeraj Kumbhar : SJSU ID -009990760</p>
+  <p style="color:#C0C0C0;">Contact information: <a href="mailto:neeraj.kumbhar@sjsu.edu">neeraj.kumbhar@sjsu.edu</a>.</p>
+</div>
+</footer>
+
+<script type="text/javascript" src='js/quiz.js'></script>
+
+</body>
+</html>

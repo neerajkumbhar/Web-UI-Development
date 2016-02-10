@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Assignment1</title>
+<meta name="author" content="Neeraj Kumbhar"/>
+<meta name="description" content="HTML5 MARK-DATALIST SCORM - SCOs"/>
+<meta name="application name" content="Online Examination"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<link rel="stylesheet" href="css/styles.css">
+<style>
+  
+  article {
+  width: 1100px;
+}
+
+</style>
+
+
+<script>
+    function clearFunction() {
+          document.getElementById('radio1').checked=false;
+          document.getElementById('radio2').checked=false;
+          document.getElementById('radio3').checked=false;
+          document.getElementById('radio4').checked=false;
+          document.getElementById('radio5').checked=false;
+          document.getElementById('radio6').checked=false;
+
+    }
+</script>
+
+
+
+</head>
+
+<body>
+
+
+<article>
+	<header>
+		<hgroup>
+			<h1 align = "center">
+				Question 3</h1>
+
+		</hgroup>
+	</header> 
+
+	 <section> 
+    <br><br>
+			<p style="width: 500px; position: absolute;">As per latest twitter news, complete the article snipper given by selecting appropraite chouces from the blanks</p>
+
+      <aside style="font-size:medium;clear:right;float:right;width:500px;">
+        " <br>
+        Twitter wants more cash. The company announced two <mark>$_____</mark> million debt offerings in a filings today, each with a potential $100 increase provided that sales are oversubscribed. Assuming full tip, including the $100 million boosters, <mark>______</mark> will rise upto $1.5 billion with the two offerings. <br><br>
+        "
+      </aside>
+
+
+			
+  				<br> <br>
+  				<br> <br>
+  				<br> <br>
+
+		<form id="form1" onsubmit="return checkAnswer('read', 3);" action="question4.html">
+
+			<table style="width:40%" align = "left">
+  				<tr>
+    				<td><input type="radio" id="radio1" name="option1" value="option1"></td>	
+    				<td>
+    					 $650
+    				</td>	
+
+            <td><input type="radio" id="radio2" name="option2" value="option2"></td>  
+            <td>
+               Twitter
+            </td> 
+           </tr> 
+       </table> 
+       <br><br>
+       
+       <table style="width:40%" align = "left">   
+          <tr>
+            <td><input type="radio" id="radio3"  name="option1" value="option3"></td>  
+            <td>
+               $550
+            </td> 
+
+            <td><input type="radio" id="radio4"  name="option2" value="option4"></td>  
+            <td>
+               Google
+            </td> 
+           </tr> 
+        </table>
+        <br><br>
+
+        <table style="width:45%" align = "left">
+          <tr>
+            <td><input type="radio" id="radio5"  name="option1" value="option5"></td>  
+            <td>
+               $650
+            </td> 
+
+            <td><input type="radio" id="radio6" name="option2" value="option6"></td>  
+            <td>
+               Facebook
+            </td> 
+           </tr> 
+  			</table>
+
+		</form>
+		
+    <br> <br> <br> <br>	
+    <br> <br> 
+   
+
+
+    <table style="width:40%">
+       <tr>
+        <td>
+          <button type="submit" id="button"  form="form1" value="Submit & Next Question" 
+          style="height:40px;width:180px">
+          <b>Submit & Next Question </b>
+          </button>
+          <!-- <input type="submit" name="next" value="Submit & Next Question" align="left"> -->
+        </td>   
+
+        <td>
+          <button type="submit" id="button" onclick="clearFunction()" value="Cancel & Clear Selection" 
+          style="height:40px;width:180px">
+          <b>Cancel & Clear Selection </b>
+          </button>
+        </td>
+     </tr>
+
+
+    </table>  
+						
+	 </section>
+
+</article>
+
+<footer align="center">
+  <div>
+  <p style="color:#C0C0C0;">Posted by: Neeraj Kumbhar : SJSU ID -009990760</p>
+  <p style="color:#C0C0C0;">Contact information: <a href="mailto:neeraj.kumbhar@sjsu.edu">neeraj.kumbhar@sjsu.edu</a>.</p>
+</div>
+</footer>
+
+<script type="text/javascript" src='js/quiz.js'></script>
+
+</body>
+</html>

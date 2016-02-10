@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Assignment1</title>
+<meta name="author" content="Neeraj Kumbhar"/>
+<meta name="description" content="HTML5 MARK-DATALIST SCORM - SCOs"/>
+<meta name="application name" content="Online Examination"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+<link rel="stylesheet" href="css/styles.css">
+
+<style>
+	article {
+	width: 500px;
+}
+</style>
+</head>
+
+<body>
+
+<article>
+	<header>
+		<hgroup>
+			<h1 align = "center">User Login</h1>
+		</hgroup>
+	</header>
+
+	<!-- <section> -->
+	
+
+	<form action = "question1.html" method = "get">
+		<br><br>
+
+		<table style="width:70%" align = "center">
+			<tr>
+				<td>Username: </td>
+				<td> <input type="text" name="username">
+				</td>		
+			</tr>
+
+			<tr></tr>
+			<tr></tr>
+			<tr></tr>
+
+			<tr>
+				<td>Password:</td>
+				<td><input type="text" name="password">
+				</td>	   
+			</tr>
+
+			<tr></tr>
+			<tr></tr>
+			<tr></tr>
+
+			<tr>
+				<td>
+					<a href="">Create Account/Forget?
+					</a>
+				</td>
+
+				<td><input type="submit" id="button" value="Login"> </td>
+
+			</tr>
+		</table>
+	</form>
+
+</article>
+
+<script type="text/javascript">
+	localStorage.setItem("questionsAnswered",0);
+	localStorage.setItem("correctAnsCnt",0);
+
+	var ans = [];
+ans[0] = 0;
+ans[1] = 0;
+ans[2] = 0;
+localStorage["ans"] = JSON.stringify(ans);
+	//localStorage.setItem("ans","{'quant':0, 'read':0, 'av':0}");
+</script>
+</body>
+</html>
