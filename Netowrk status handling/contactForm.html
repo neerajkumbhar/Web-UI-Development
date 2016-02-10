@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<script>
+	
+	window.addEventListener('load', function() 
+	{
+    	var status = document.getElementById("status");
+  		function updateOnlineStatus(event) 
+  		{
+    		var condition = navigator.onLine ? "online" : "offline";		
+  			status.className = condition;
+    		status.innerHTML = condition.toUpperCase();
+  		}
+
+  		window.addEventListener('online',  updateOnlineStatus);
+  		window.addEventListener('offline', updateOnlineStatus);
+	});
+
+</script>
+
+<script>
+
+  window.onload = function() {
+            var audioEl = document.getElementById("audioTag");
+         
+            audioEl.load();
+            audioEl.play();
+        };
+</script>
+
+
+<style>
+
+#status {
+  position: fixed;
+  width: 100%;
+  font: bold 1em sans-serif;
+  color: #FFF;
+  padding: 0.5em;
+}
+
+.online {
+  background: green;
+}
+
+.offline {
+  background: red;
+}
+
+
+article {
+  width: 1500px;
+  border: thin black solid; 
+  padding: 25px; 
+  margin-bottom: 5px;
+  margin:auto;
+  border-radius:1px;
+  /*padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;*/
+}
+
+
+#hideme {display: none;}
+
+</style>
+</head>
+
+
+<body>
+
+<div id="status"></div>
+<article>
+  <p> 
+    <strong>  
+        <font size="5"> Contact Form </font>
+     </strong> 
+  </p>
+
+ <hr>
+ <section>
+  <div>
+      <table>
+          <tr>
+              <td align="left">
+            Your Name </td>
+          </tr>
+
+           <tr>
+              <td> <input type="text" id="name" name="name"required autofocus/> <br /> </td>
+          </tr>
+
+          <tr>
+              <td align="left">
+            Email </td>
+          </tr>
+
+           <tr>
+              <td>  <input type="email" id="email_addr" name="email_addr" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/>  </td>
+          </tr>
+
+          <tr>
+              <td align="left">
+            State </td>
+
+           <td> 
+               Select your favorite color: <input type="color" name="favcolor">
+           </td>
+
+         </tr>
+
+         <tr>
+           <td>
+           <input type="datetime-local" name="bdaytime"> </td>
+          </tr>
+
+           <tr>
+
+            <td>
+                   <ul contenteditable="true">
+                        <li> Break mechanical cab driver. </li>
+                        <li> Drive to abandoned factory
+                        <li> Watch video of self </li>
+                  </ul>
+            </td>
+
+            <td>
+            <label>
+                  <input id="state" name=State list=StateList>
+                    <datalist id=StateList>
+                          <option value="Alabama"></option>
+                          <option value="Alsaka"></option>
+                          <option value="Arizona "></option>
+                          <option value="Arkansas"></option>
+                          <option value="California"></option>
+                          <option value="Colorado"></option>
+                          <option value="Connecticut"></option>
+                          <option value="Delaware"></option>
+                          <option value="Florida"></option>
+                          <option value="Georgia"></option>
+                          <option value="Idaho "></option>
+                          <option value="Illinois"></option>
+                          <option value="Maine"></option>
+                          <option value="Kansas"></option>
+                          <option value="Kentucky"></option>
+                          <option value="Louisiana"></option>
+                    </datalist>
+            </label>
+          </td> 
+
+
+          <tr>
+              <td align="left">
+            Subject </td>
+          </tr>
+
+           <tr>
+              <td> <input type="text" id="subject" name="subject"required /> <br /> </td>
+          </tr>
+
+          <tr>
+              <div id="hideme">
+                <audio id = "audioTag" autoplay="autoplay" controls="controls" loop="loop">
+                  <source src="file.ogg" />
+                  <source src="The Great Escape.mp3" /> 
+                      <a>Download this file.</a>
+                  </audio>
+                </div>  
+
+                  <p> They were interrupted, just after Quato said, <mark>"Open your Mind"</mark>. </p>
+
+
+          </tr> 
+
+          <tr>
+              <td align="left">
+            Comment </td>
+          </tr>
+
+           <tr>
+            <td>
+              <textarea id='textarea1' style="width:270%;" rows="7" autofocus>
+              </textarea>
+            </td>  
+       
+          </tr>
+
+      
+
+          <tr> </tr>
+          <tr> </tr>
+          <tr> </tr>
+
+          <tr>
+            <td>
+             <button type="submit" id="button" form="form1" value="Register">
+                      <b>Send</b>
+                </button>
+
+                 <button type="submit" id="button" onclick="clearFunction()" value="Cancel">
+                          <b>Cancel</b> 
+               </button>  
+          </td> 
+
+          </tr> 
+
+        </tr>
+      </table>  
+  </div>
+
+ </section> 
+
+</article>
+
+<footer align="left">
+    <div>
+      <p style="color:#C0C0C0;">Posted by: Neeraj Kumbhar</p>
+      <p style="color:#C0C0C0;">Turn off the internet connection to observer the behaviour of the HTML Page and Turn it on again: (Without reloading the page)</p>
+    </div>
+</footer>
+
+</body>	
+</html>

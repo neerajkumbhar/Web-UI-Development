@@ -1,0 +1,11 @@
+Turn off the internet connection to observer the behaviour of the HTML Page 
+
+and Turn it on again: (Without reloading the page). Network status has been handled
+
+in this piece of contact form. While filling the form if the internet is turned off
+
+the user get notified by a big red coloured toolbar saying OFFLINE. More appealing 
+
+and user friendly when he gets the message as OFFLINE (red colored) or ONLINE (green colored).
+
+Consists of other HTML5 festures and special tags.
