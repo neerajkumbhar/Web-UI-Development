@@ -6,4 +6,4 @@ Sample code used for session storage:
 
 sessionStorage.setItem("User ID",0);
 var user = document.getElementById("userid");
-sessionStorage.setItem("User ID", user.value);
+sessionStorage.setItem("User ID", user.value);  
