@@ -1,9 +1,9 @@
-Consists of a login screen for users to login into examination. Once
+A small POC of a registeraion page where the data entered by the user 
 
-logged in, user get a series of QnA and 4 options to select the correct
+is being stored in the session storage.
 
-answer. Followed by questions there is a scoring system in the end
+Sample code used for session storage:
 
-which calculates points according to category. Used most of the new
-
-HTML5 features.
+sessionStorage.setItem("User ID",0);
+var user = document.getElementById("userid");
+sessionStorage.setItem("User ID", user.value);

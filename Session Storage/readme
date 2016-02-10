@@ -1,0 +1,9 @@
+Consists of a login screen for users to login into examination. Once
+
+logged in, user get a series of QnA and 4 options to select the correct
+
+answer. Followed by questions there is a scoring system in the end
+
+which calculates points according to category. Used most of the new
+
+HTML5 features.
